@@ -13,6 +13,7 @@
         <module>tomcat</module>
         <module>tool</module>
         <module>algorithm</module>
+        <module>socket-io</module>
     </modules>
 
     <properties>

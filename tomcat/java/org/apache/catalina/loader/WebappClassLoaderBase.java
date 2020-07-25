@@ -1247,7 +1247,7 @@ public abstract class WebappClassLoaderBase extends URLClassLoader
             try {
                 // Use getResource as it won't trigger an expensive
                 // ClassNotFoundException if the resource is not available from
-                // the Java SE class loader. However (see
+                // the Java SE class loader. However (seeS
                 // https://bz.apache.org/bugzilla/show_bug.cgi?id=58125 for
                 // details) when running under a security manager in rare cases
                 // this call may trigger a ClassCircularityError.
@@ -1521,7 +1521,7 @@ public abstract class WebappClassLoaderBase extends URLClassLoader
             }
         }
         WebResource[] jars = resources.listResources("/WEB-INF/lib");
-        for (WebResource jar : jars) {
+            for (WebResource jar : jars) {
             if (jar.getName().endsWith(".jar") && jar.isFile() && jar.canRead()) {
                 localRepositories.add(jar.getURL());
                 jarModificationTimes.put(

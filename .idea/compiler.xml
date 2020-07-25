@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="algorithm" />
         <module name="jvm" />
+        <module name="socket-io" />
         <module name="tomcat" />
         <module name="tool" />
       </profile>
@@ -16,6 +17,7 @@
       <module name="algorithm" target="1.8" />
       <module name="jvm" target="1.8" />
       <module name="lab" target="1.8" />
+      <module name="socket-io" target="1.8" />
       <module name="tomcat" target="1.8" />
       <module name="tool" target="1.8" />
     </bytecodeTargetLevel>
