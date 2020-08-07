@@ -6,14 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="algorithm" />
         <module name="jvm" />
         <module name="tomcat" />
+        <module name="tool" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="jvm" target="1.5" />
-      <module name="lab" target="1.5" />
+      <module name="algorithm" target="1.8" />
+      <module name="jvm" target="1.8" />
+      <module name="lab" target="1.8" />
       <module name="tomcat" target="1.8" />
+      <module name="tool" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
