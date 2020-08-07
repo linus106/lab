@@ -8,10 +8,7 @@
 *.ipr
 .idea/workspace.xml
 .idea/*
-<<<<<<< HEAD
 .idea
 *.iml
 target
-=======
-.idea
->>>>>>> change gitignore
+.idea/
