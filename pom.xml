@@ -14,6 +14,7 @@
         <module>tool</module>
         <module>algorithm</module>
         <module>socket-io</module>
+        <module>concurrency</module>
     </modules>
 
     <properties>
