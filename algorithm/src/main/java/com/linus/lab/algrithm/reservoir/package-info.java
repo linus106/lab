@@ -1,6 +1,6 @@
 package com.linus.lab.algrithm.reservoir;
 
-/*
+/**
 蓄水池抽样算法
 其目的在于从包含 n 个项目的集合 S 中随机选取 k 个样本
 其中 n 为一很大或未知的数量，尤其适用于不能把所有 n 个项目都存放到内存的情况。
