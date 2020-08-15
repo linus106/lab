@@ -6,6 +6,9 @@ import java.util.Arrays;
  * @author ：wangxiangyu
  * @date ：Created in 2020/8/9
  * https://leetcode-cn.com/problems/minimum-cost-to-cut-a-stick/submissions/
+ *
+ * 动态规划 + 缓存
+ *
  */
 public class Q4 {
 
