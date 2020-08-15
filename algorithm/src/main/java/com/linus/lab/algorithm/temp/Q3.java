@@ -1,4 +1,4 @@
-package com.linus.lab.algrithm.temp;
+package com.linus.lab.algorithm.temp;
 
 import java.util.HashSet;
 import java.util.Set;

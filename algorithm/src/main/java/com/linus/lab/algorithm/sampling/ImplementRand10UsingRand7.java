@@ -1,8 +1,5 @@
 package com.linus.lab.algorithm.sampling;
 
-import com.linus.lab.algrithm.reservoir.RandomPickIndex;
-import com.sun.org.apache.bcel.internal.generic.NEW;
-
 import java.util.Map;
 import java.util.Random;
 import java.util.function.Function;

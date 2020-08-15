@@ -1,13 +1,5 @@
 package com.linus.lab.algorithm.sampling;
 
-import com.linus.lab.algrithm.reservoir.RandomPickIndex;
-
-import java.util.Map;
-import java.util.Random;
-import java.util.function.Function;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
 /**
  * @Author wangxiangyu
  * @Date 2020/8/10 13:54

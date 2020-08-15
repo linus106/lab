@@ -1,4 +1,4 @@
-package com.linus.lab.algrithm.reservoir;
+package com.linus.lab.algorithm.reservoir;
 
 import java.util.Map;
 import java.util.Random;

@@ -1,4 +1,4 @@
-package com.linus.lab.algrithm.reservoir;
+package com.linus.lab.algorithm.reservoir;
 
 /**
 蓄水池抽样算法
