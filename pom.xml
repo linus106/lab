@@ -13,7 +13,7 @@
         <module>tomcat</module>
         <module>tool</module>
         <module>algorithm</module>
-        <module>socket-io</module>
+        <module>io</module>
         <module>concurrency</module>
         <module>juc</module>
     </modules>

@@ -1,4 +1,4 @@
-package com.linus.lab.socket.nio;
+package com.linus.lab.io.nio;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;

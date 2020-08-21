@@ -1,6 +1,4 @@
-package com.linus.lab.socket.bio;
-
-import org.apache.commons.io.IOUtils;
+package com.linus.lab.io.bio;
 
 import java.io.IOException;
 import java.io.InputStream;
