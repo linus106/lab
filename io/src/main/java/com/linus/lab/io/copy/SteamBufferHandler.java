@@ -9,7 +9,7 @@ import java.io.IOException;
  * @Date 2020/8/21 14:44
  * @Description 一次读写1K数据,耗费CPU
  */
-public class InputSteamReadBufferHandler implements IFileCopyHandler {
+public class SteamBufferHandler implements IFileCopyHandler {
 
 
     @Override
@@ -28,6 +28,6 @@ public class InputSteamReadBufferHandler implements IFileCopyHandler {
 
     @Override
     public String getName() {
-        return "InputSteamReadBufferHandler";
+        return "SteamBufferHandler";
     }
 }

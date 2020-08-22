@@ -12,13 +12,13 @@ public class Tester {
 
 
     private static final String BASE_PATH = "D:\\Temp\\";
-    private static final String SOURCE_FILE = "source.zip";
+    private static final String SOURCE_FILE = "The.Grand.Budapest.Hotel.2014.HDRip.X264-PLAYNOW.mp4";
 //    private static final String SOURCE_FILE = "10_kbqa-ss_micro_app_kbqa_lt_all.log";
     private static final String SUFFIX = SOURCE_FILE.substring(SOURCE_FILE.lastIndexOf('.'));
 
     public static void main(String[] args) {
         Arrays.asList(
-                new InputSteamReadBufferHandler()).forEach(h->{
+                new SteamBufferHandler(), new MemoryMappingHandler(), new ZeroCopyHandler()).forEach(h->{
             String source = BASE_PATH + SOURCE_FILE;
             String target = BASE_PATH + h.getName() + SUFFIX;
             try {

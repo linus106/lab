@@ -10,7 +10,7 @@ import java.io.IOException;
  * @Date 2020/8/21 14:44
  * @Description 按照一个一个字节去读写
  */
-public class InputSteamReadByteHandler implements IFileCopyHandler {
+public class SteamByteHandler implements IFileCopyHandler {
 
 
     @Override
@@ -28,6 +28,6 @@ public class InputSteamReadByteHandler implements IFileCopyHandler {
 
     @Override
     public String getName() {
-        return "InputSteamReadByteHandler";
+        return "SteamByteHandler";
     }
 }
