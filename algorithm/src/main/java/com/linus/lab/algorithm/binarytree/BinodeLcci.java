@@ -1,6 +1,4 @@
-package com.linus.lab.algorithm.binary;
-
-import javax.swing.tree.TreeNode;
+package com.linus.lab.algorithm.binarytree;
 
 /**
  * @Author wangxiangyu

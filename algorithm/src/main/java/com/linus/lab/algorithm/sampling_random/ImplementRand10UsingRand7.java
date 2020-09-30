@@ -1,4 +1,4 @@
-package com.linus.lab.algorithm.sampling;
+package com.linus.lab.algorithm.sampling_random;
 
 import java.util.Map;
 import java.util.Random;

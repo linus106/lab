@@ -1,4 +1,4 @@
-package com.linus.lab.algorithm.binary;
+package com.linus.lab.algorithm.binarytree;
 
 /**
  * @Author wangxiangyu
