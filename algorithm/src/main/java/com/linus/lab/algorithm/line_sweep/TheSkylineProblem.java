@@ -1,9 +1,8 @@
 package com.linus.lab.algorithm.line_sweep;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.PriorityQueue;
+import com.sun.javafx.geom.transform.Identity;
+
+import java.util.*;
 
 /**
  * @Author wangxiangyu
@@ -12,6 +11,41 @@ import java.util.PriorityQueue;
  * https://leetcode-cn.com/problems/the-skyline-problem/
  */
 public class TheSkylineProblem {
+
+
+    /**
+     * TreeMap红黑树的删增效率比PriorityQueue的堆要更高一些；40ms vs 317ms
+     *
+     */
+    public List<List<Integer>> getSkylineByLineSweepTreeMap(int[][] buildings) {
+
+        PriorityQueue<int[]> all = new PriorityQueue<>((a, b) -> a[0] == b[0] ? a[1] - b[1] : a[0] - b[0]);
+        for (int[] building : buildings) {
+            all.offer(new int[]{building[0], -building[2]});// 符号区分大楼的开始和结束
+            all.offer(new int[]{building[1], building[2]});
+        }
+
+
+        List<List<Integer>> result = new ArrayList<>();
+        TreeMap<Integer, Integer> currentHeights = new TreeMap<>(Comparator.comparingInt(Integer::intValue));
+        currentHeights.put(0, 0);
+        int lastHeight = 0;
+        while(!all.isEmpty()) {
+            int[] point = all.poll();
+            if (point[1] < 0) {//start of building
+                currentHeights.put(point[1], currentHeights.getOrDefault(point[1], 0) + 1);
+            } else {//end of building
+                currentHeights.put(-point[1], currentHeights.get(-point[1]) - 1);
+                if (currentHeights.get(-point[1]) == 0) currentHeights.remove(-point[1]);
+            }
+            if (lastHeight != -currentHeights.firstKey()) {
+                lastHeight =  -currentHeights.firstKey();
+                result.add(Arrays.asList(point[0], lastHeight));
+            }
+        }
+
+        return result;
+    }
 
     public List<List<Integer>> getSkylineByLineSweep(int[][] buildings) {
 
@@ -23,9 +57,20 @@ public class TheSkylineProblem {
 
 
         List<List<Integer>> result = new ArrayList<>();
-        PriorityQueue<Integer> currentHeights = new PriorityQueue<>((a, b) -> a - b);
+        PriorityQueue<Integer> currentHeights = new PriorityQueue<>(Comparator.comparingInt(Integer::intValue));
+        currentHeights.add(0);
+        int lastHeight = 0;
         while(!all.isEmpty()) {
-
+            int[] point = all.poll();
+            if (point[1] < 0) {//start of building
+                currentHeights.offer(point[1]);
+            } else {//end of building
+                currentHeights.remove(-point[1]);
+            }
+            if (lastHeight != -currentHeights.peek()) {
+                lastHeight =  -currentHeights.peek();
+                result.add(Arrays.asList(point[0], lastHeight));
+            }
         }
 
         return result;
@@ -91,7 +136,7 @@ public class TheSkylineProblem {
 
     public static void main(String[] args) {
 
-        List<List<Integer>> result = new TheSkylineProblem().getSkyline(
+        List<List<Integer>> result = new TheSkylineProblem().getSkylineByLineSweepTreeMap(
                 new int[][]{
                         new int[]{2, 9, 10},
                         new int[]{3, 7, 15},
