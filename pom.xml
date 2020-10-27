@@ -17,6 +17,7 @@
         <module>concurrency</module>
         <module>juc</module>
         <module>spring</module>
+        <module>mybatis</module>
     </modules>
 
     <properties>
