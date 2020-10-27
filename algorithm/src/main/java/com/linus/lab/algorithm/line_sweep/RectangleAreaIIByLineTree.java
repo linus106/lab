@@ -8,6 +8,7 @@ import java.util.stream.Collectors;
 /**
  * @author ：wangxiangyu
  * @date ：Created in 2020/10/11
+ * https://leetcode-cn.com/problems/rectangle-area-ii/submissions/
  */
 public class RectangleAreaIIByLineTree {
 
