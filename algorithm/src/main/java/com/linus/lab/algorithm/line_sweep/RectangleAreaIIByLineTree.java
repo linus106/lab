@@ -65,7 +65,7 @@ public class RectangleAreaIIByLineTree {
      *       |
      * 覆盖次数2|覆盖长度1
      */
-    class Node {
+    private class Node {
         Node left, right;
         int start, end, mid;
         int coveredLength, coveredTimes;
