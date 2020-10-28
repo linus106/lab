@@ -4,6 +4,34 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
     <properties resource="db.properties"/>
+    
+    <settings>
+        <setting name="cacheEnabled" value="true"/>
+        <!--<setting name="logImpl" value=""/>-->
+    </settings>
+
+    <typeAliases>
+        <typeAlias alias="Blog" type="com.linus.lab.mybatis.pojo.Blog"/>
+    </typeAliases>
+
+    <typeHandlers>
+        <!--<typeHandler handler="com.linus.lab.mybatis.typehandler.TypeEnumTypeHandler"
+        javaType="com.linus.lab.mybatis.pojo.BlogTypeEnum"/>-->
+
+        <!-- 用枚举的下标(从0开始)作为int值存在数据库 -->
+        <typeHandler handler="org.apache.ibatis.type.EnumOrdinalTypeHandler"
+                     javaType="com.linus.lab.mybatis.pojo.BlogTypeEnum"/>
+    </typeHandlers>
+
+    <plugins>
+        <plugin interceptor="com.linus.lab.mybatis.plugin.LogPlugin">
+            <property name="someProperty" value="100"/>
+        </plugin>
+    </plugins>
+
+
+
+    
     <environments default="development">
         <environment id="development">
             <transactionManager type="JDBC"/>
@@ -21,4 +49,6 @@
         <!--<mapper class="xxxMapper"/>-->
         <!--<mapper url="file:///var/mappers/AuthorMapper.xml"/>-->
     </mappers>
+
+
 </configuration>
