@@ -18,6 +18,7 @@
         <module>juc</module>
         <module>spring</module>
         <module>mybatis</module>
+        <module>redis</module>
     </modules>
 
     <properties>
