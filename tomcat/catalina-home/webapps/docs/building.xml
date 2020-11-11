@@ -77,7 +77,7 @@ the symbolic name <code>${ant.home}</code> is used to refer to the full pathname
 <p>
 <b>IMPORTANT</b>: Create an ANT_HOME environment variable to point the directory <code>${ant.home}</code>,
 and modify the PATH environment variable to include directory
-<code>${ant.home}/bin</code> in its list.  This makes the <code>ant</code> command line script
+<code>${ant.home}/bin</code> in its memo.  This makes the <code>ant</code> command line script
 available, which will be used to actually perform the build.
 </p>
 

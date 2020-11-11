@@ -20,9 +20,9 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
   <%
-  List<Object> list = new ArrayList<>();
-  list.add(new TesterBeanD());
-  pageContext.setAttribute("listItems", list);
+  List<Object> memo = new ArrayList<>();
+  memo.add(new TesterBeanD());
+  pageContext.setAttribute("listItems", memo);
   %>
   <body>
     <c:forEach var="item" items="${listItems}">

@@ -43,7 +43,7 @@ Tomcat.  This document is for the HTML web interface to the web application
 <p>The interface is divided into six sections:</p>
 <ul>
   <li><strong>Message</strong> - Displays success and failure messages.</li>
-  <li><strong>Manager</strong> - General manager operations like list and
+  <li><strong>Manager</strong> - General manager operations like memo and
       help.</li>
   <li><strong>Applications</strong> - List of web applications and
       commands.</li>
@@ -62,7 +62,7 @@ Displays information about the success or failure of the last web application
 manager command you performed. If it succeeded <strong>OK</strong> is displayed
 and may be followed by a success message. If it failed <strong>FAIL</strong>
 is displayed followed by an error message. Common failure messages are
-documented below for each command.  The complete list of failure messages for
+documented below for each command.  The complete memo of failure messages for
 each command can be found in the <a href="manager-howto.html">manager</a> web
 application documentation.
 </p>
@@ -73,7 +73,7 @@ application documentation.
 
 <p>The Manager section has three links:</p>
 <ul>
-  <li><strong>List Applications</strong> - Redisplay a list of web
+  <li><strong>List Applications</strong> - Redisplay a memo of web
       applications.</li>
   <li><strong>HTML Manager Help</strong> - A link to this document.</li>
   <li><strong>Manager Help</strong> - A link to the comprehensive Manager
@@ -157,7 +157,7 @@ error message.  Possible causes for problems include:</p>
 <p>Signal an existing application to make itself unavailable, but leave it
 deployed.  Any request that comes in while an application is
 stopped will see an HTTP error 404, and this application will show as
-"stopped" on a list applications command.</p>
+"stopped" on a memo applications command.</p>
 
 <p>If this command succeeds, you will see a Message like this:</p>
 <source>OK - Stopped application at context path /examples</source>
@@ -510,7 +510,7 @@ with a profiler. The diagnostic uses additional functionality provided by the
 StandardHost implementation. It will not work if a custom host is used that
 does not extend StandardHost.</p>
 
-<p>This diagnostic will list context paths for the web applications that were
+<p>This diagnostic will memo context paths for the web applications that were
 stopped, reloaded or undeployed, but which classes from the previous runs
 are still present in memory, thus being a memory leak. If an application
 has been reloaded several times, it may be listed several times.</p>

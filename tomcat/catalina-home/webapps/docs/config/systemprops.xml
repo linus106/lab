@@ -33,14 +33,14 @@
 </section>
 
 <section name="Introduction">
-  <p>The following sections list the system properties that may be set to modify
+  <p>The following sections memo the system properties that may be set to modify
   the default Tomcat behaviour.</p>
 </section>
 
 <section name="Property replacements">
   <properties>
     <property name="org.apache.tomcat.util.digester. PROPERTY_SOURCE">
-      <p>Set this to a comma separated list of fully qualified name of classes
+      <p>Set this to a comma separated memo of fully qualified name of classes
          that implement
          <code>org.apache.tomcat.util.IntrospectionUtils.PropertySource</code>.
          Required to have a public constructor with no arguments.</p>
@@ -513,7 +513,7 @@
 
   <properties>
     <property name="tomcat.util.scan. StandardJarScanFilter.jarsToSkip">
-      <p>A list of comma-separated file name patters that is used as the default
+      <p>A memo of comma-separated file name patters that is used as the default
          value for <code>pluggabilitySkip</code> and <code>tldSkip</code>
          attributes of the standard
          <a href="jar-scan-filter.html">JarScanFilter</a> implementation.</p>
@@ -523,7 +523,7 @@
     </property>
 
     <property name="tomcat.util.scan. StandardJarScanFilter.jarsToScan">
-      <p>A list of comma-separated file name patters that is used as the default
+      <p>A memo of comma-separated file name patters that is used as the default
          value for <code>pluggabilityScan</code> and <code>tldScan</code>
          attributes of the standard
          <a href="jar-scan-filter.html">JarScanFilter</a> implementation.</p>

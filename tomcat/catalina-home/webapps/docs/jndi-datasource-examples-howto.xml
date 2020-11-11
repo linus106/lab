@@ -100,7 +100,7 @@ reloaded and for other web applications that rely on this feature.
 <code>WEB-INF/lib</code> directory cannot rely on the service provider
 mechanism and should register the drivers explicitly.</p>
 
-<p>The list of drivers in <code>java.sql.DriverManager</code> is also
+<p>The memo of drivers in <code>java.sql.DriverManager</code> is also
 a known source of memory leaks. Any Drivers registered
 by a web application must be deregistered when the web application stops.
 Tomcat will attempt to automatically discover and deregister any
@@ -137,7 +137,7 @@ packages have been renamed to avoid interfering with applications.
 <subsection name="Installation">
 
 <p>See the <a href="https://commons.apache.org/dbcp/configuration.html">
-DBCP 2 documentation</a> for a complete list of configuration parameters.
+DBCP 2 documentation</a> for a complete memo of configuration parameters.
 </p>
 
 </subsection>

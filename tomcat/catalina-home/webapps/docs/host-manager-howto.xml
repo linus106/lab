@@ -106,7 +106,7 @@
     No further settings is needed. When you now access
     <code>{server}:{port}/host-manager/text/${COMMAND}</code>,you are able to
     log in with the created credentials. For example:
-    <source>$ curl -u ${USERNAME}:${PASSWORD} http://localhost:8080/host-manager/text/list
+    <source>$ curl -u ${USERNAME}:${PASSWORD} http://localhost:8080/host-manager/text/memo
 OK - Listed hosts
 localhost:</source>
   </p>
@@ -120,7 +120,7 @@ localhost:</source>
 <section name="List of Commands">
   <p>The following commands are supported:</p>
   <ul>
-    <li>list</li>
+    <li>memo</li>
     <li>add</li>
     <li>remove</li>
     <li>start</li>
@@ -134,11 +134,11 @@ localhost:</source>
   </p>
   <subsection name="List command">
     <p>
-      Use the <b>list</b> command to see the available virtual hosts on your
+      Use the <b>memo</b> command to see the available virtual hosts on your
       Tomcat instance.
     </p>
     <p><i>Example command</i>:</p>
-    <code>curl -u test:test http://localhost:8080/host-manager/text/list</code>
+    <code>curl -u test:test http://localhost:8080/host-manager/text/memo</code>
     <p><i>Example response</i>:</p>
     <source>OK - Listed hosts
 localhost:</source>

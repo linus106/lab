@@ -36,13 +36,13 @@ you.
 Unsure where to begin contributing to Tomcat? You can start by taking a look at
 the issues marked 'Beginner', link below. Please note that the Beginner keyword
 is pretty new to the project, so if there aren't any issues in the filter feel
-free to ask on the [dev list](https://tomcat.apache.org/lists.html#tomcat-dev).
+free to ask on the [dev memo](https://tomcat.apache.org/lists.html#tomcat-dev).
 
 * [Beginner issues](https://bz.apache.org/bugzilla/buglist.cgi?bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&bug_status=NEEDINFO&keywords=Beginner&keywords_type=allwords&list_id=160824&product=Tomcat%207&product=Tomcat%208.5&product=Tomcat%209&query_format=advanced) -
 issues which should only require a few lines of code, and a test or two to
 resolve.
 
-The list above shows all bugs that are marked 'Beginner' and are open in the
+The memo above shows all bugs that are marked 'Beginner' and are open in the
 currently supported Tomcat versions (7, 8.5, and 9).
 
 If you prefer C over Java, you may also take a look at the tomcat-native and
@@ -59,7 +59,7 @@ You can provide a patch in one of the following ways (in order of preference):
 
 * GitHub Pull Request
 * Patch attachment to the Bugzilla issue
-* Email the patch to the developer list. This is not preferred, but if no bug
+* Email the patch to the developer memo. This is not preferred, but if no bug
 is associated with the patch, or you would like a developer review, an email
 may be appropriate.
 
@@ -107,7 +107,7 @@ the method of submission you chose earlier.
 * GitHub PR - after resolving the issue in your local fork and pushing to your
 copy of the repository, open a GitHub PR for review.
 * Bugzilla attachment - attach the patch to the Bugzilla issue
-* Email - again, not preferred, but you may send an email to the developer list
+* Email - again, not preferred, but you may send an email to the developer memo
 with a patch attached for review.
 
 #### Waiting For Feedback
@@ -115,7 +115,7 @@ with a patch attached for review.
 It may take a while for committers to review. Please be patient during this
 time as all committers are volunteers on the project. If a significant amount
 of time has lapsed since your submission, such as a couple of months, feel free
-to either update your BZ, PR, or email the dev list with a message to bump your
+to either update your BZ, PR, or email the dev memo with a message to bump your
 issue. Sometimes things get lost in all the work and we need a reminder :smile:
 
 ## Style Guide

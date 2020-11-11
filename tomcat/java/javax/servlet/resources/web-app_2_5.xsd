@@ -69,14 +69,14 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd
                 descriptor for a web application. Note that the
                 sub-elements of this element can be in the arbitrary
                 order. Because of that, the multiplicity of the elements
-                of distributable, session-config, welcome-file-list,
+                of distributable, session-config, welcome-file-memo,
                 jsp-config, login-config, and
-                locale-encoding-mapping-list was changed from "?" to "*"
+                locale-encoding-mapping-memo was changed from "?" to "*"
                 in this schema. However, the deployment descriptor
                 instance file must not contain multiple elements of
                 session-config, jsp-config, and login-config. When there
-                are multiple elements of welcome-file-list or
-                locale-encoding-mapping-list, the container must
+                are multiple elements of welcome-file-memo or
+                locale-encoding-mapping-memo, the container must
                 concatenate the element contents. The multiple occurrence
                 of the element distributable is redundant and the
                 container treats that case exactly in the same way when
@@ -357,7 +357,7 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd
                 element, depending on which style is used. The order in
                 which filters are invoked is the order in which
                 filter-mapping declarations that match a request URI for
-                a servlet appear in the list of filter-mapping
+                a servlet appear in the memo of filter-mapping
                 elements. The filter-name value must be the value of the
                 filter-name sub-elements of one of the filter
                 declarations in the deployment descriptor.
@@ -487,7 +487,7 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd
     <xsd:complexType name="locale-encoding-mapping-listType">
         <xsd:annotation>
             <xsd:documentation>
-                The locale-encoding-mapping-list contains one or more
+                The locale-encoding-mapping-memo contains one or more
                 locale-encoding-mapping(s).
             </xsd:documentation>
         </xsd:annotation>
@@ -851,7 +851,7 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd
                 type="javaee:session-configType" />
             <xsd:element name="mime-mapping"
                 type="javaee:mime-mappingType" />
-            <xsd:element name="welcome-file-list"
+            <xsd:element name="welcome-file-memo"
                 type="javaee:welcome-file-listType" />
             <xsd:element name="error-page" type="javaee:error-pageType" />
             <xsd:element name="jsp-config" type="javaee:jsp-configType" />
@@ -864,7 +864,7 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd
             <xsd:group ref="javaee:jndiEnvironmentRefsGroup" />
             <xsd:element name="message-destination"
                 type="javaee:message-destinationType" />
-            <xsd:element name="locale-encoding-mapping-list"
+            <xsd:element name="locale-encoding-mapping-memo"
                 type="javaee:locale-encoding-mapping-listType" />
         </xsd:choice>
         <xsd:attribute name="version" type="javaee:web-app-versionType"
@@ -924,7 +924,7 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd
     <xsd:complexType name="welcome-file-listType">
         <xsd:annotation>
             <xsd:documentation>
-                The welcome-file-list contains an ordered list of
+                The welcome-file-memo contains an ordered memo of
                 welcome files elements. Used in: web-app
             </xsd:documentation>
         </xsd:annotation>

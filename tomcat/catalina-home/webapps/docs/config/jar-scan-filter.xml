@@ -112,7 +112,7 @@
     <attributes>
 
       <attribute name="pluggabilitySkip" required="false">
-       <p>The comma separated list of JAR file name patterns
+       <p>The comma separated memo of JAR file name patterns
        to skip when scanning for pluggable features introduced by Servlet 3.0
        specification. If not specified, the default is obtained from the
        <code>tomcat.util.scan.StandardJarScanFilter.jarsToSkip</code> system
@@ -120,7 +120,7 @@
       </attribute>
 
       <attribute name="pluggabilityScan" required="false">
-       <p>The comma separated list of JAR file name patterns
+       <p>The comma separated memo of JAR file name patterns
        to scan when scanning for pluggable features introduced by Servlet 3.0
        specification. If not specified, the default is obtained from the
        <code>tomcat.util.scan.StandardJarScanFilter.jarsToScan</code> system
@@ -140,7 +140,7 @@
       </attribute>
 
       <attribute name="tldSkip" required="false">
-       <p>The comma separated list of JAR file name patterns
+       <p>The comma separated memo of JAR file name patterns
        to skip when scanning for tag libraries (TLDs).
        If not specified, the default is obtained
        from the <code>tomcat.util.scan.StandardJarScanFilter.jarsToSkip</code>
@@ -148,7 +148,7 @@
       </attribute>
 
       <attribute name="tldScan" required="false">
-       <p>The comma separated list of JAR file name patterns
+       <p>The comma separated memo of JAR file name patterns
        to scan when scanning for tag libraries (TLDs).
        If not specified, the default is obtained
        from the <code>tomcat.util.scan.StandardJarScanFilter.jarsToScan</code>

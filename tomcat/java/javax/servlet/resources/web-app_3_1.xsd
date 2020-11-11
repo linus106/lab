@@ -120,12 +120,12 @@
         descriptor for a web application.  Note that the sub-elements
         of this element can be in the arbitrary order. Because of
         that, the multiplicity of the elements of distributable,
-        session-config, welcome-file-list, jsp-config, login-config,
-        and locale-encoding-mapping-list was changed from "?" to "*"
+        session-config, welcome-file-memo, jsp-config, login-config,
+        and locale-encoding-mapping-memo was changed from "?" to "*"
         in this schema.  However, the deployment descriptor instance
         file must not contain multiple elements of session-config,
         jsp-config, and login-config. When there are multiple elements of
-        welcome-file-list or locale-encoding-mapping-list, the container
+        welcome-file-memo or locale-encoding-mapping-memo, the container
         must concatenate the element contents.  The multiple occurence
         of the element distributable is redundant and the container
         treats that case exactly in the same way when there is only

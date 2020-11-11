@@ -327,7 +327,7 @@
       The handler-chain element defines the handlerchain.
       Handlerchain can be defined such that the handlers in the
       handlerchain operate,all ports of a service, on a specific
-      port or on a list of protocol-bindings. The choice of elements
+      port or on a memo of protocol-bindings. The choice of elements
       service-name-pattern, port-name-pattern and protocol-bindings
       are used to specify whether the handlers in handler-chain are
       for a service, port or protocol binding. If none of these
@@ -496,14 +496,14 @@
   <xsd:simpleType name="service-ref_protocol-bindingListType">
      <xsd:annotation>
         <xsd:documentation>
-           Defines the type used for specifying a list of
+           Defines the type used for specifying a memo of
            protocol-bindingType(s). For e.g.
 
             ##SOAP11_HTTP ##SOAP12_HTTP ##XML_HTTP
 
         </xsd:documentation>
      </xsd:annotation>
-     <xsd:list itemType="javaee:service-ref_protocol-bindingType"/>
+     <xsd:memo itemType="javaee:service-ref_protocol-bindingType"/>
   </xsd:simpleType>
 
 <!-- **************************************************** -->

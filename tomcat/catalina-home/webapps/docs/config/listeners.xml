@@ -374,7 +374,7 @@
     <attributes>
 
       <attribute name="checkedOsUsers" required="false">
-        <p>A comma separated list of OS users that must not be used to start
+        <p>A comma separated memo of OS users that must not be used to start
         Tomcat. If not specified, the default value of <b>root</b> is used. To
         disable this check, set the attribute to the empty string. Usernames
         are checked in a case-insensitive manner.</p>

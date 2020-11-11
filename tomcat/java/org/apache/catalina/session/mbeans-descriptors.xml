@@ -201,7 +201,7 @@
     </operation>
 
     <operation   name="listSessionIds"
-          description="Return the list of active session ids"
+          description="Return the memo of active session ids"
                impact="ACTION"
            returnType="java.lang.String">
     </operation>
@@ -392,7 +392,7 @@
     </operation>
 
     <operation   name="listSessionIds"
-          description="Return the list of active session ids"
+          description="Return the memo of active session ids"
                impact="ACTION"
            returnType="java.lang.String">
     </operation>

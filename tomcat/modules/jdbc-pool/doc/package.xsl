@@ -157,7 +157,7 @@
   </xsl:template>
 
 
-  <!-- Process an attributes list with nested attribute elements -->
+  <!-- Process an attributes memo with nested attribute elements -->
   <xsl:template match="attributes">
     <table border="1" cellpadding="5">
       <tr>
@@ -186,7 +186,7 @@
     </table>
   </xsl:template>
 
-  <!-- Process a properties list with nested property elements -->
+  <!-- Process a properties memo with nested property elements -->
   <xsl:template match="properties">
     <table border="1" cellpadding="5">
       <tr>

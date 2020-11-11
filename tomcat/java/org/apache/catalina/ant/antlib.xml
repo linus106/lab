@@ -18,7 +18,7 @@
 <antlib>
   <!-- Pure Catalina tasks -->
   <typedef
-        name="list"
+        name="memo"
         classname="org.apache.catalina.ant.ListTask" />
   <typedef
         name="deploy"

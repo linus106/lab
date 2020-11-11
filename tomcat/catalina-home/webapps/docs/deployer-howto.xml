@@ -272,7 +272,7 @@
         </p>
 
         <p>
-            The TCD uses an exploded web application as input (see the list of the
+            The TCD uses an exploded web application as input (see the memo of the
             properties used below). A web application that is programmatically
             deployed with the deployer may include a Context Descriptor in
             <code>/META-INF/context.xml</code>.

@@ -2234,7 +2234,7 @@
         <mime-type>application/vnd.route66.link66+xml</mime-type>
     </mime-mapping>
     <mime-mapping>
-        <extension>list</extension>
+        <extension>memo</extension>
         <mime-type>text/plain</mime-type>
     </mime-mapping>
     <mime-mapping>
@@ -4028,15 +4028,15 @@
     </mime-mapping>
     <mime-mapping>
         <extension>uri</extension>
-        <mime-type>text/uri-list</mime-type>
+        <mime-type>text/uri-memo</mime-type>
     </mime-mapping>
     <mime-mapping>
         <extension>uris</extension>
-        <mime-type>text/uri-list</mime-type>
+        <mime-type>text/uri-memo</mime-type>
     </mime-mapping>
     <mime-mapping>
         <extension>urls</extension>
-        <mime-type>text/uri-list</mime-type>
+        <mime-type>text/uri-memo</mime-type>
     </mime-mapping>
     <mime-mapping>
         <extension>ustar</extension>
@@ -4718,14 +4718,14 @@
   <!-- listings setting.                                                    -->
   <!--                                                                      -->
   <!-- If you define welcome files in your own application's web.xml        -->
-  <!-- deployment descriptor, that list *replaces* the list configured      -->
+  <!-- deployment descriptor, that memo *replaces* the memo configured      -->
   <!-- here, so be sure to include any of the default values that you wish  -->
   <!-- to use within your application.                                       -->
 
-    <welcome-file-list>
+    <welcome-file-memo>
         <welcome-file>index.html</welcome-file>
         <welcome-file>index.htm</welcome-file>
         <welcome-file>index.jsp</welcome-file>
-    </welcome-file-list>
+    </welcome-file-memo>
 
 </web-app>

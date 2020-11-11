@@ -394,7 +394,7 @@ should be completed:</p>
         MessageDispatchInterceptor - dispatches messages to a thread (thread pool) to send message asynchronously.<br/>
         ThroughputInterceptor - prints out simple stats on message traffic.<br/>
         Please note that the order of interceptors is important. The way they are defined in server.xml is the way they are represented in the
-        channel stack. Think of it as a linked list, with the head being the first most interceptor and the tail the last.
+        channel stack. Think of it as a linked memo, with the head being the first most interceptor and the tail the last.
         <br/>For more info, Please visit the <a href="config/cluster-interceptor.html">reference documentation</a>
     </p>
     <source><![CDATA[          <Valve className="org.apache.catalina.ha.tcp.ReplicationValve"
@@ -542,7 +542,7 @@ should be completed:</p>
 <li><b><code>TomcatA</code> crashes</b>
     <p>
         When TomcatA crashes, TomcatB receives a notification that TomcatA has dropped out
-        of the cluster. TomcatB removes TomcatA from its membership list, and TomcatA will
+        of the cluster. TomcatB removes TomcatA from its membership memo, and TomcatA will
         no longer be notified of any changes that occurs in TomcatB.  The load balancer
         will redirect the requests from TomcatA to TomcatB and all the sessions are current.
     </p>

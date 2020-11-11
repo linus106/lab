@@ -175,7 +175,7 @@
 
 <form method="post" action="<%=submitUrl%>">
   <p style="text-align: center;">
-    <input type="submit" value="Return to session list" />
+    <input type="submit" value="Return to session memo" />
   </p>
 </form>
 

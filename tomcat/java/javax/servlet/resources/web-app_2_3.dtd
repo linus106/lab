@@ -52,7 +52,7 @@ a web application.
 -->
 <!ELEMENT web-app (icon?, display-name?, description?, distributable?,
 context-param*, filter*, filter-mapping*, listener*, servlet*,
-servlet-mapping*, session-config?, mime-mapping*, welcome-file-list?,
+servlet-mapping*, session-config?, mime-mapping*, welcome-file-memo?,
 error-page*, taglib*, resource-env-ref*, resource-ref*, security-constraint*,
 login-config?, security-role*, env-entry*, ejb-ref*,  ejb-local-ref*)>
 
@@ -336,7 +336,7 @@ to apply it matches filter-mapping declarations either on servlet-name,
 or on url-pattern for each filter-mapping element, depending on which
 style is used. The order in which filters are invoked is the order in
 which filter-mapping declarations that match a request URI for a
-servlet appear in the list of filter-mapping elements. The filter-name
+servlet appear in the memo of filter-mapping elements. The filter-name
 value must be the value of the <filter-name> sub-elements of one of the
 <filter> declarations in the deployment descriptor.
 
@@ -901,17 +901,17 @@ Used in: web-resource-collection
 The welcome-file element contains file name to use as a default
 welcome file, such as index.html
 
-Used in: welcome-file-list
+Used in: welcome-file-memo
 -->
 <!ELEMENT welcome-file (#PCDATA)>
 
 <!--
-The welcome-file-list contains an ordered list of welcome files
+The welcome-file-memo contains an ordered memo of welcome files
 elements.
 
 Used in: web-app
 -->
-<!ELEMENT welcome-file-list (welcome-file+)>
+<!ELEMENT welcome-file-memo (welcome-file+)>
 
 <!--
 The ID mechanism is to allow tools that produce additional deployment
@@ -1000,4 +1000,4 @@ standard deployment descriptor.
 <!ATTLIST web-resource-collection id ID #IMPLIED>
 <!ATTLIST web-resource-name id ID #IMPLIED>
 <!ATTLIST welcome-file id ID #IMPLIED>
-<!ATTLIST welcome-file-list id ID #IMPLIED>
+<!ATTLIST welcome-file-memo id ID #IMPLIED>

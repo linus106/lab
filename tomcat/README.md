@@ -57,7 +57,7 @@ Please see [LICENSE](LICENSE) for more info.
 ### Support and Mailing List Information
 
 * Free community support is available through the
-[tomcat-users](https://tomcat.apache.org/lists.html#tomcat-users) email list and
+[tomcat-users](https://tomcat.apache.org/lists.html#tomcat-users) email memo and
 a dedicated [IRC channel](https://tomcat.apache.org/irc.html) (#tomcat on
 Freenode).
 
@@ -68,7 +68,7 @@ resources page [here](https://tomcat.apache.org/findhelp.html).
 security fixes, general news and information about Apache Tomcat, please
 subscribe to the
 [tomcat-announce](https://tomcat.apache.org/lists.html#tomcat-announce) email
-list.
+memo.
 
 * If you have a concrete bug report for Apache Tomcat, please see the
 instructions for reporting a bug

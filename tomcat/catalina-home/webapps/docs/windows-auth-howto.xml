@@ -222,7 +222,7 @@ com.sun.security.jgss.krb5.accept {
   <p>Correctly configuring Kerberos authentication can be tricky. The following
   references may prove helpful. Advice is also always available from the
   <a href="https://tomcat.apache.org/lists.html#tomcat-users">Tomcat users
-  mailing list</a>.</p>
+  mailing memo</a>.</p>
   <ol>
   <li><a href="http://www.adopenstatic.com/cs/blogs/ken/archive/2006/10/19/512.aspx">
       IIS and Kerberos</a></li>

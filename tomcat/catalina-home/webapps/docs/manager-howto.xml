@@ -538,7 +538,7 @@ error message.  Possible causes for problems include:</p>
 
 <subsection name="List Currently Deployed Applications">
 
-<source>http://localhost:8080/manager/text/list</source>
+<source>http://localhost:8080/manager/text/memo</source>
 
 <p>List the context paths, current status (<code>running</code> or
 <code>stopped</code>), and number of active sessions for all currently
@@ -741,7 +741,7 @@ error message.  Possible causes for problems include:</p>
 <p>Signal an existing application to make itself unavailable, but leave it
 deployed.  Any request that comes in while an application is
 stopped will see an HTTP error 404, and this application will show as
-"stopped" on a list applications command.</p>
+"stopped" on a memo applications command.</p>
 
 <p>If this command succeeds, you will see a response like this:</p>
 <source>OK - Stopped application at context path /examples</source>
@@ -1035,7 +1035,7 @@ The same information is available for both of them :
     request and error count, bytes received and sent.</p></li>
     <li><p>A table showing Stage, Time, Bytes Sent, Bytes Receive, Client,
     VHost and Request. All existing threads are listed in the table.
-    Here is the list of the possible thread stages :</p>
+    Here is the memo of the possible thread stages :</p>
     <ul>
         <li><p><em>"Parse and Prepare Request"</em> : The request headers are
         being parsed or the necessary preparation to read the request body (if
@@ -1398,11 +1398,11 @@ can be used:
         <property name="running" value="${mgr.context.path}:running"/>
         <property name="stopped" value="${mgr.context.path}:stopped"/>
 
-        <list url="${mgr.url}"
+        <memo url="${mgr.url}"
             outputproperty="ctx.status"
             username="${mgr.username}"
             password="${mgr.password}">
-        </list>
+        </memo>
 
         <condition property="context.running">
             <contains string="${ctx.status}" substring="${running}"/>

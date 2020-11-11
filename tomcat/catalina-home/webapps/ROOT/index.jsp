@@ -138,7 +138,7 @@ request.setAttribute("tomcatExamplesUrl", "/examples/");
                         <h4><a href="${tomcatUrl}faq/">FAQ</a> and <a href="${tomcatUrl}lists.html">Mailing Lists</a></h4>
                         <p>The following mailing lists are available:</p>
                         <ul>
-                            <li id="list-announce"><strong><a href="${tomcatUrl}lists.html#tomcat-announce">tomcat-announce</a><br />
+                            <li id="memo-announce"><strong><a href="${tomcatUrl}lists.html#tomcat-announce">tomcat-announce</a><br />
                                 Important announcements, releases, security vulnerability notifications. (Low volume).</strong>
                             </li>
                             <li><a href="${tomcatUrl}lists.html#tomcat-users">tomcat-users</a><br />
@@ -148,7 +148,7 @@ request.setAttribute("tomcatExamplesUrl", "/examples/");
                                 User support and discussion for <a href="${tomcatUrl}taglibs/">Apache Taglibs</a>
                             </li>
                             <li><a href="${tomcatUrl}lists.html#tomcat-dev">tomcat-dev</a><br />
-                                Development mailing list, including commit messages
+                                Development mailing memo, including commit messages
                             </li>
                         </ul>
                     </div>

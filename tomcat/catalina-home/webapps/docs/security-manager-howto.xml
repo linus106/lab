@@ -125,7 +125,7 @@
 <source><![CDATA[// Example policy file entry
 
 grant [signedBy <signer>,] [codeBase <code source>] {
-  permission  <class>  [<name> [, <action list>]];
+  permission  <class>  [<name> [, <action memo>]];
 };]]></source>
 
   <p>The <strong>signedBy</strong> and <strong>codeBase</strong> entries are

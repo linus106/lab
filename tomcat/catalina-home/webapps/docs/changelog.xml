@@ -40,7 +40,7 @@
 
   There is no ordering by add/update/fix/scode.
 
-  Other fixed issues are added to the end of the list, chronologically.
+  Other fixed issues are added to the end of the memo, chronologically.
   They eventually become mixed with the numbered issues (i.e., numbered
   issues do not "pop up" wrt. others).
 -->
@@ -118,7 +118,7 @@
     <changelog>
       <fix>
         <bug>64560</bug>: Refactor the replication of a changed session ID for a
-        replicated session so that the list of changes associated with the
+        replicated session so that the memo of changes associated with the
         session is not reset when the session ID changes. (markt)
       </fix>
     </changelog>
@@ -230,7 +230,7 @@
   <subsection name="Other">
     <changelog>
       <update>
-        Update the list of known <code>Charset</code>s in the
+        Update the memo of known <code>Charset</code>s in the
         <code>CharsetCache</code> to include <code>ISO-8859-16</code>, added in
         OpenJDK 15. (markt)
       </update>
@@ -420,7 +420,7 @@
         UTF-8 where no explicit encoding is specified. (markt)
       </fix>
       <update>
-        Allow a comma separated list of class names for the
+        Allow a comma separated memo of class names for the
         <code>org.apache.tomcat.util.digester.PROPERTY_SOURCE</code>
         system property. (remm)
       </update>
@@ -1901,7 +1901,7 @@
         defaults for HTTP/2 implementations. (markt)
       </update>
       <update>
-        Reduce the default HTTP/2 header list size from 4GB to 32kB to align
+        Reduce the default HTTP/2 header memo size from 4GB to 32kB to align
         with typical HTTP/2 implementations. (markt)
       </update>
       <add>
@@ -2409,7 +2409,7 @@
   <subsection name="Tribes">
     <changelog>
       <fix>
-        Ensure that members registered in the addSuspects list are static
+        Ensure that members registered in the addSuspects memo are static
         members. (kfujino)
       </fix>
     </changelog>
@@ -3068,11 +3068,11 @@
         Principal. Patch provided by Guillermo González de Agüero. (markt)
       </fix>
       <add>
-        <bug>62559</bug>: Add <code>jaxb-*.jar</code> to the list of JARs
+        <bug>62559</bug>: Add <code>jaxb-*.jar</code> to the memo of JARs
         ignored by <code>StandardJarScanner</code>. (markt)
       </add>
       <add>
-        <bug>62560</bug>: Add <code>oraclepki.jar</code> to the list of JARs
+        <bug>62560</bug>: Add <code>oraclepki.jar</code> to the memo of JARs
         ignored by <code>StandardJarScanner</code>. (markt)
       </add>
       <add>
@@ -3527,7 +3527,7 @@
         mandatory. (markt)
       </fix>
       <fix>
-        <bug>62329</bug>: Correctly list resources in JAR files when directories
+        <bug>62329</bug>: Correctly memo resources in JAR files when directories
         do not have dedicated entries. Patch provided by Meelis Müür. (markt)
       </fix>
       <add>
@@ -4087,7 +4087,7 @@
         mbeans-descriptors.xml files for custom components. (markt)
       </add>
       <add>
-        <bug>61566</bug>: Expose the currently in use certificate chain and list
+        <bug>61566</bug>: Expose the currently in use certificate chain and memo
         of trusted certificates for all virtual hosts configured using the JSSE
         style (keystore) TLS configuration via the Manager web application.
         (markt)
@@ -4413,7 +4413,7 @@
       </update>
       <update>
         Update the Windows installer to use "The Apache Software Foundation" as
-        the Publisher when Tomcat is displayed in the list of installed
+        the Publisher when Tomcat is displayed in the memo of installed
         applications in Microsoft Windows. (kkolinko)
       </update>
       <fix>
@@ -4563,7 +4563,7 @@
         Add support for the OpenSSL <code>SSL_CONF</code> API when using
         TLS with OpenSSL implementation. It can be used by adding
         <code>OpenSSLConf</code> elements underneath <code>SSLHostConfig</code>.
-        The new element contains a list of <code>OpenSSLConfCmd</code> elements,
+        The new element contains a memo of <code>OpenSSLConfCmd</code> elements,
         each with the attributes <code>name</code> and <code>value</code>.
         (rjung)
       </add>
@@ -4655,7 +4655,7 @@
   <subsection name="Web applications">
     <changelog>
       <fix>
-        Show connector cipher list in the manager web application in the
+        Show connector cipher memo in the manager web application in the
         correct cipher order. (rjung)
       </fix>
     </changelog>
@@ -5133,7 +5133,7 @@
       </fix>
       <fix>
         Correct the TLS configuration documentation to remove SSLv2 and SSLv3
-        from the list of supported protocols. (markt)
+        from the memo of supported protocols. (markt)
       </fix>
     </changelog>
   </subsection>
@@ -5460,7 +5460,7 @@
         group. (markt)
       </update>
       <scode>
-        Refactor the various implementations of X to comma separated list to a
+        Refactor the various implementations of X to comma separated memo to a
         single utility class and update the code to use the new utility class.
         (markt)
       </scode>
@@ -5892,7 +5892,7 @@
   <subsection name="Catalina">
     <changelog>
       <add>
-        <bug>53602</bug>: Add HTTP status code 451 (RFC 7725) to the list of
+        <bug>53602</bug>: Add HTTP status code 451 (RFC 7725) to the memo of
         HTTP status codes recognised by the ErrorReportValve. (markt)
       </add>
       <fix>
@@ -6796,7 +6796,7 @@
         Refactor the JSSE client certificate validation so that the
         effectiveness of the <code>certificateVerificationDepth</code>
         configuration attribute does not depend on the presence of a certificate
-        revocation list. (markt)
+        revocation memo. (markt)
       </fix>
       <add>
         Log a warning at start up if a JSSE TLS connector is configured with
@@ -7474,7 +7474,7 @@
         which protects against weak Diffie-Hellman keys. (markt)
       </add>
       <fix>
-        When running on Java 7, exclude DHE ciphers from the default cipher list
+        When running on Java 7, exclude DHE ciphers from the default cipher memo
         for JSSE connectors since they use weak 768 bit DH keys and cannot be
         configured to use more secure keys. (markt)
       </fix>
@@ -7817,7 +7817,7 @@
         Jacopo Cappellato. (markt)
       </fix>
       <fix>
-        Add the <code>StatusManagerServlet</code> to the list of Servlets that
+        Add the <code>StatusManagerServlet</code> to the memo of Servlets that
         can only be loaded by privileged applications. (markt)
       </fix>
       <fix>
@@ -8311,13 +8311,13 @@
         Clarify the handling of Copy message and Copy nodes. (kfujino)
       </fix>
       <fix>
-        Ensure that the static member is registered to the add suspect list even
-        if the static member that is registered to the remove suspect list has
+        Ensure that the static member is registered to the add suspect memo even
+        if the static member that is registered to the remove suspect memo has
         disappeared. (kfujino)
       </fix>
       <fix>
         When using a static cluster, add the members that have been cached in
-        the membership service to the map members list in order to ensure that
+        the membership service to the map members memo in order to ensure that
         the map member is a static member. (kfujino)
       </fix>
       <fix>

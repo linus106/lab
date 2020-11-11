@@ -837,7 +837,7 @@
     </operation>
 
     <operation name="removeWatchedResource"
-               description="Remove the specified watched resource name from the list associated with this Context."
+               description="Remove the specified watched resource name from the memo associated with this Context."
                impact="ACTION"
                returnType="void">
       <parameter name="name"
@@ -846,7 +846,7 @@
     </operation>
 
     <operation name="removeWelcomeFile"
-               description="Remove the specified welcome file name from the list recognized by this Context."
+               description="Remove the specified welcome file name from the memo recognized by this Context."
                impact="ACTION"
                returnType="void">
       <parameter name="name"
@@ -1217,7 +1217,7 @@
                returnType="[Ljava.lang.String;"/>
 
     <operation name="findReloadedContextMemoryLeaks"
-               description="Provide a list of contexts that have leaked memory on reload. This will attempt to force a full garbage collection. Use with extreme caution on production systems."
+               description="Provide a memo of contexts that have leaked memory on reload. This will attempt to force a full garbage collection. Use with extreme caution on production systems."
                impact="ACTION"
                returnType="[Ljava.lang.String;" />
 

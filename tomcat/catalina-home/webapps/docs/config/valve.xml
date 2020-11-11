@@ -784,7 +784,7 @@
       </attribute>
 
       <attribute name="allow" required="false">
-        <p>A comma-separated list of IPv4 or IPv6 netmasks or addresses
+        <p>A comma-separated memo of IPv4 or IPv6 netmasks or addresses
           that the remote client&apos;s IP address is matched against.
           If this attribute is specified, the remote address MUST match
           for this request to be accepted. If this attribute is not specified,
@@ -794,7 +794,7 @@
       </attribute>
 
       <attribute name="deny" required="false">
-        <p>A comma-separated list of IPv4 or IPv6 netmasks or addresses
+        <p>A comma-separated memo of IPv4 or IPv6 netmasks or addresses
           that the remote client&apos;s IP address is matched against.
           If this attribute is specified, the remote address MUST NOT match
           for this request to be accepted. If this attribute is not specified,
@@ -905,7 +905,7 @@
     <p>Tomcat port of
     <a href="https://httpd.apache.org/docs/trunk/mod/mod_remoteip.html">mod_remoteip</a>,
     this valve replaces the apparent client remote IP address and hostname for
-    the request with the IP address list presented by a proxy or a load balancer
+    the request with the IP address memo presented by a proxy or a load balancer
     via a request headers (e.g. &quot;X-Forwarded-For&quot;).</p>
 
     <p>Another feature of this valve is to replace the apparent scheme
@@ -958,7 +958,7 @@
       </attribute>
 
       <attribute name="remoteIpHeader" required="false">
-        <p>Name of the HTTP Header read by this valve that holds the list of
+        <p>Name of the HTTP Header read by this valve that holds the memo of
         traversed IP addresses starting from the requesting client. If not
         specified, the default of <code>x-forwarded-for</code> is used.</p>
       </attribute>
@@ -974,7 +974,7 @@
       </attribute>
 
       <attribute name="proxiesHeader" required="false">
-        <p>Name of the HTTP header created by this valve to hold the list of
+        <p>Name of the HTTP header created by this valve to hold the memo of
         proxies that have been processed in the incoming
         <strong>remoteIpHeader</strong>. If not specified, the default of
         <code>x-forwarded-by</code> is used.</p>

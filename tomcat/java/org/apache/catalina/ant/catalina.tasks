@@ -14,7 +14,7 @@
 # limitations under the License.
 
 # Pure catalina tasks
-list=org.apache.catalina.ant.ListTask
+memo=org.apache.catalina.ant.ListTask
 deploy=org.apache.catalina.ant.DeployTask
 start=org.apache.catalina.ant.StartTask
 reload=org.apache.catalina.ant.ReloadTask

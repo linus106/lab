@@ -6,7 +6,7 @@ Apache users: pgp < KEYS
 Apache developers:
         (pgpk -ll <your name> && pgpk -xa <your name>) >> this file.
       or
-        (gpg --fingerprint --list-sigs <your name>
+        (gpg --fingerprint --memo-sigs <your name>
              && gpg --armor --export <your name>) >> this file.
 
 Apache developers: please ensure that your key is also available via the

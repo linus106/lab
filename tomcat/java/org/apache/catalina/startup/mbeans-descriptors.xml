@@ -91,7 +91,7 @@
                type="boolean"/>
 
     <operation name="addServiced"
-               description="Add a web application to the serviced list to show it gets serviced by another component"
+               description="Add a web application to the serviced memo to show it gets serviced by another component"
                impact="ACTION"
                returnType="void">
       <parameter name="name"
@@ -151,7 +151,7 @@
     </operation>
 
     <operation name="removeServiced"
-               description="Remove a web application from the serviced list to show it isn't serviced by another component"
+               description="Remove a web application from the serviced memo to show it isn't serviced by another component"
                impact="ACTION"
                returnType="void">
       <parameter name="name"

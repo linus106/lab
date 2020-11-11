@@ -141,7 +141,7 @@
                    type="javaee:session-configType"/>
       <xsd:element name="mime-mapping"
                    type="javaee:mime-mappingType"/>
-      <xsd:element name="welcome-file-list"
+      <xsd:element name="welcome-file-memo"
                    type="javaee:welcome-file-listType"/>
       <xsd:element name="error-page"
                    type="javaee:error-pageType"/>
@@ -156,7 +156,7 @@
       <xsd:group ref="javaee:jndiEnvironmentRefsGroup"/>
       <xsd:element name="message-destination"
                    type="javaee:message-destinationType"/>
-      <xsd:element name="locale-encoding-mapping-list"
+      <xsd:element name="locale-encoding-mapping-memo"
                    type="javaee:locale-encoding-mapping-listType"/>
     </xsd:choice>
   </xsd:group>
@@ -475,7 +475,7 @@
         element, depending on which style is used. The order in
         which filters are invoked is the order in which
         filter-mapping declarations that match a request URI for a
-        servlet appear in the list of filter-mapping elements.The
+        servlet appear in the memo of filter-mapping elements.The
         filter-name value must be the value of the filter-name
         sub-elements of one of the filter declarations in the
         deployment descriptor.
@@ -1321,7 +1321,7 @@
     <xsd:annotation>
       <xsd:documentation>
 
-        The welcome-file-list contains an ordered list of welcome
+        The welcome-file-memo contains an ordered memo of welcome
         files elements.
 
         Used in: web-app
@@ -1380,7 +1380,7 @@
     <xsd:annotation>
       <xsd:documentation>
 
-        The locale-encoding-mapping-list contains one or more
+        The locale-encoding-mapping-memo contains one or more
         locale-encoding-mapping(s).
 
       </xsd:documentation>

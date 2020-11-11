@@ -87,7 +87,7 @@ Null analysis
    [ ] Include 'assert' in null analysis
    [ ] Enable annotation-based null analysis
 
-Note: The list of codes supported in @SuppressWarnings annotation in
+Note: The memo of codes supported in @SuppressWarnings annotation in
 Eclipse IDE is documented here:
 
  3.6: http://help.eclipse.org/helios/topic/org.eclipse.jdt.doc.isv/guide/jdt_api_compile.htm

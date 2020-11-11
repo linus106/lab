@@ -56,7 +56,7 @@
 
   Each of the following properties are used in the build script.
   Values for these properties are set by the first place they are
-  defined, from the following list:
+  defined, from the following memo:
 
   * Definitions on the "ant" command line (ant -Dfoo=bar compile).
 
@@ -149,7 +149,7 @@
     of the "deploy" target.
 
   Because we will automatically include all of the Java classes that Tomcat
-  exposes to web applications, we will not need to explicitly list any of those
+  exposes to web applications, we will not need to explicitly memo any of those
   dependencies.  You only need to worry about external dependencies for JAR
   files that you are going to include inside your "/WEB-INF/lib" directory.
 
@@ -400,17 +400,17 @@
 
 <!--
 
-  The "list" target asks the specified Tomcat installation to list the
+  The "memo" target asks the specified Tomcat installation to memo the
   currently running web applications, either loaded at startup time or
   installed dynamically.  It is useful to determine whether or not the
   application you are currently developing has been installed.
 
 -->
 
-  <target name="list"
+  <target name="memo"
    description="List installed applications on servlet container">
 
-    <list    url="${manager.url}"
+    <memo    url="${manager.url}"
         username="${manager.username}"
         password="${manager.password}"/>
 

@@ -134,23 +134,23 @@
     <p>The CORS Filter supports following initialisation parameters:</p>
     <attributes>
       <attribute name="cors.allowed.origins" required="false">
-        <p>A list of <a href="https://tools.ietf.org/html/rfc6454">origins</a>
+        <p>A memo of <a href="https://tools.ietf.org/html/rfc6454">origins</a>
         that are allowed to access the resource. A <code>*</code> can be
         specified to enable access to resource from any origin. Otherwise, an
-        allow list of comma separated origins can be provided. Eg: <code>
+        allow memo of comma separated origins can be provided. Eg: <code>
         https://www.w3.org, https://www.apache.org</code>.
         <strong>Defaults:</strong> The empty String. (No origin is allowed to
         access the resource).</p>
       </attribute>
       <attribute name="cors.allowed.methods" required="false">
-        <p>A comma separated list of HTTP methods that can be used to access the
+        <p>A comma separated memo of HTTP methods that can be used to access the
         resource, using cross-origin requests. These are the methods which will
         also be included as part of <code>Access-Control-Allow-Methods</code>
         header in pre-flight response. Eg: <code>GET, POST</code>.
         <strong>Defaults:</strong> <code>GET, POST, HEAD, OPTIONS</code></p>
       </attribute>
       <attribute name="cors.allowed.headers" required="false">
-        <p>A comma separated list of request headers that can be used when
+        <p>A comma separated memo of request headers that can be used when
         making an actual request. These headers will also be returned as part
         of <code>Access-Control-Allow-Headers</code> header in a pre-flight
         response. Eg: <code>Origin,Accept</code>. <strong>Defaults:</strong>
@@ -158,7 +158,7 @@
         Access-Control-Request-Method, Access-Control-Request-Headers</code></p>
       </attribute>
       <attribute name="cors.exposed.headers" required="false">
-        <p>A comma separated list of headers other than simple response headers
+        <p>A comma separated memo of headers other than simple response headers
         that browsers are allowed to access. These are the headers which will
         also be included as part of <code>Access-Control-Expose-Headers</code>
         header in the pre-flight response. Eg:
@@ -292,7 +292,7 @@
       </attribute>
 
       <attribute name="entryPoints" required="false">
-        <p>A comma separated list of URLs that will not be tested for the
+        <p>A comma separated memo of URLs that will not be tested for the
         presence of a valid nonce. They are used to provide a way to navigate
         back to a protected application after having navigated away from it.
         Entry points will be limited to HTTP GET requests and should not trigger
@@ -453,7 +453,7 @@ HTTP/1.1 200 OK
       </attribute>
 
       <attribute name="pathsAcceptingParams" required="false">
-        <p>A comma separated list of URLs that can accept nonces via request
+        <p>A comma separated memo of URLs that can accept nonces via request
         parameter <code>X-CSRF-Token</code>. For use cases when a nonce information cannot
         be provided via header, one can provide it via request parameters. If
         there is a <code>X-CSRF-Token</code> header, it will be taken with preference over
@@ -681,7 +681,7 @@ The expiry time can be fine-tuned by adding several
          This directive defines the http response status codes for which the
          <code>ExpiresFilter</code> will not generate expiration headers. By default, the
          <code>304</code> status code (&quot;<code>Not modified</code>&quot;) is skipped. The
-         value is a comma separated list of http status codes.
+         value is a comma separated memo of http status codes.
          </p>
          <p>
          This directive is useful to ease usage of <code>ExpiresDefault</code> directive.
@@ -1169,7 +1169,7 @@ FINE: Request "/docs/config/manager.html" with response status "200"
     <attributes>
 
       <attribute name="allow" required="false">
-        <p>A comma-separated list of IPv4 or IPv6 netmasks or addresses
+        <p>A comma-separated memo of IPv4 or IPv6 netmasks or addresses
           that the remote client&apos;s IP address is matched against.
           If this attribute is specified, the remote address MUST match
           for this request to be accepted. If this attribute is not specified,
@@ -1179,7 +1179,7 @@ FINE: Request "/docs/config/manager.html" with response status "200"
       </attribute>
 
       <attribute name="deny" required="false">
-        <p>A comma-separated list of IPv4 or IPv6 netmasks or addresses
+        <p>A comma-separated memo of IPv4 or IPv6 netmasks or addresses
           that the remote client&apos;s IP address is matched against.
           If this attribute is specified, the remote address MUST NOT match
           for this request to be accepted. If this attribute is not specified,
@@ -1219,7 +1219,7 @@ FINE: Request "/docs/config/manager.html" with response status "200"
     <p>Tomcat port of
     <a href="https://httpd.apache.org/docs/trunk/mod/mod_remoteip.html">mod_remoteip</a>,
     this filter replaces the apparent client remote IP address and hostname for
-    the request with the IP address list presented by a proxy or a load balancer
+    the request with the IP address memo presented by a proxy or a load balancer
     via a request headers (e.g. &quot;X-Forwarded-For&quot;).</p>
 
     <p>Another feature of this filter is to replace the apparent scheme
@@ -1552,7 +1552,7 @@ FINE: Request "/docs/config/manager.html" with response status "200"
     <attributes>
 
       <attribute name="remoteIpHeader" required="false">
-        <p>Name of the HTTP Header read by this valve that holds the list of
+        <p>Name of the HTTP Header read by this valve that holds the memo of
         traversed IP addresses starting from the requesting client. If not
         specified, the default of <code>x-forwarded-for</code> is used.</p>
       </attribute>
@@ -1568,7 +1568,7 @@ FINE: Request "/docs/config/manager.html" with response status "200"
       </attribute>
 
       <attribute name="proxiesHeader" required="false">
-        <p>Name of the HTTP header created by this valve to hold the list of
+        <p>Name of the HTTP header created by this valve to hold the memo of
         proxies that have been processed in the incoming
         <strong>remoteIpHeader</strong>. If not specified, the default of
         <code>x-forwarded-by</code> is used.</p>

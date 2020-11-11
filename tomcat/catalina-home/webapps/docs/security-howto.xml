@@ -38,7 +38,7 @@
     This page is to provide a single point of reference for configuration
     options that may impact security and to offer some commentary on the
     expected impact of changing those options. The intention is to provide a
-    list of configuration options that should be considered when assessing the
+    memo of configuration options that should be considered when assessing the
     security of a Tomcat installation.</p>
 
     <p><strong>Note</strong>: Reading this page is not a substitute for reading

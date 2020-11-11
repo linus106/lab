@@ -206,7 +206,7 @@ parameter).
 </li>
 <li>
 <strong>printenv</strong> - <code>&lt;!--#printenv --&gt;</code>
-Returns the list of all the defined variables.
+Returns the memo of all the defined variables.
 </li>
 <li>
 <strong>set</strong> - <code>&lt;!--#set var="foo" value="Bar" --&gt;</code>
@@ -296,19 +296,19 @@ Virtual path to the file</td>
 <tr>
 <td>HTTP_ACCEPT</td>
 <td>
-  A list of the MIME types that the client can accept.</td>
+  A memo of the MIME types that the client can accept.</td>
 </tr>
 
 <tr>
 <td>HTTP_ACCEPT_ENCODING</td>
 <td>
-  A list of the compression types that the client can accept.</td>
+  A memo of the compression types that the client can accept.</td>
 </tr>
 
 <tr>
 <td>HTTP_ACCEPT_LANGUAGE</td>
 <td>
-  A list of the languages that the client can accept.</td>
+  A memo of the languages that the client can accept.</td>
 </tr>
 <tr>
 <td>HTTP_CONNECTION</td>

@@ -29,7 +29,7 @@
     <!-- a Uniform Resource Identifier, see [RFC2396] -->
 
 <!ENTITY % UriList "CDATA">
-    <!-- a space separated list of Uniform Resource Identifiers -->
+    <!-- a space separated memo of Uniform Resource Identifiers -->
 
 <!ENTITY % URL "CDATA">
     <!-- a relative urlSpec is as in Section 2.10.2. -->

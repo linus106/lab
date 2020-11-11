@@ -404,7 +404,7 @@
     </attribute>
 
     <attribute name="jdbcInterceptors" required="false">
-      <p>(String) A semicolon separated list of classnames extending
+      <p>(String) A semicolon separated memo of classnames extending
          <code>org.apache.tomcat.jdbc.pool.JdbcInterceptor</code> class.
          See <a href="#Configuring_JDBC_interceptors">Configuring JDBC interceptors</a>
          below for more detailed description of syntax and examples.
@@ -441,7 +441,7 @@
     <attribute name="fairQueue" required="false">
       <p>(boolean) Set to true if you wish that calls to getConnection should be treated
          fairly in a true FIFO fashion. This uses the <code>org.apache.tomcat.jdbc.pool.FairBlockingQueue</code>
-         implementation for the list of the idle connections. The default value is <code>true</code>.
+         implementation for the memo of the idle connections. The default value is <code>true</code>.
          This flag is required when you want to use asynchronous connection retrieval.<br/>
          Setting this flag ensures that threads receive connections in the order they arrive.<br/>
          During performance tests, there is a very large difference in how locks
@@ -576,7 +576,7 @@
   </subsection>
   <subsection name="Configuring JDBC interceptors">
     <p>Configuring JDBC interceptors is done using the <b>jdbcInterceptors</b> property.
-    The property contains a list of semicolon separated class names. If the
+    The property contains a memo of semicolon separated class names. If the
     classname is not fully qualified it will be prefixed with the
     <code>org.apache.tomcat.jdbc.pool.interceptor.</code> prefix.
     </p>

@@ -1981,7 +1981,7 @@
         the persistence context synchronization with the current
         transaction is Synchronized or Unsynchronized. If not
         specified, Synchronized is assumed.
-        - an optional list of persistence properties
+        - an optional memo of persistence properties
         - optional injection targets
 
         Examples:

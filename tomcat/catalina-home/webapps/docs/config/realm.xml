@@ -407,7 +407,7 @@
       <attribute name="cipherSuites" required="false">
         <p>Specify which cipher suites are allowed when trying to open
         a secured connection using StartTLS. The allowed cipher suites
-        are specified by a comma separated list. The default is to use the
+        are specified by a comma separated memo. The default is to use the
         cipher suites of the JVM.</p>
       </attribute>
 
@@ -581,7 +581,7 @@
         the connection to the LDAP
         server after authentication. This value is used to set the
         <code>javax.security.sasl.qop</code> environment property for the LDAP
-        connection. This attribute should be a comma-separated list of values
+        connection. This attribute should be a comma-separated memo of values
         selected from <code>auth-conf</code>, <code>auth-int</code> and
         <code>auth</code>. See <a
         href="http://docs.oracle.com/javase/7/docs/api/javax/security/sasl/Sasl.html#QOP"
@@ -867,7 +867,7 @@
             alternative name for this attribute.</li>
         <li><strong>password</strong> - Password of this user (in
             clear text).</li>
-        <li><strong>roles</strong> - Comma-delimited list of the role names
+        <li><strong>roles</strong> - Comma-delimited memo of the role names
             assigned to this user.</li>
         </ul></li>
     </ul>
@@ -931,7 +931,7 @@
       </attribute>
 
       <attribute name="userClassNames" required="true">
-        <p>A comma-separated list of the names of the classes that you have made
+        <p>A comma-separated memo of the names of the classes that you have made
         for your user <code>Principals</code>.</p>
       </attribute>
 
@@ -944,7 +944,7 @@
       </attribute>
 
       <attribute name="roleClassNames" required="false">
-        <p>A comma-separated list of the names of the classes that you have made
+        <p>A comma-separated memo of the names of the classes that you have made
         for your role <code>Principals</code>.</p>
       </attribute>
 
@@ -1052,7 +1052,7 @@
     associated user storage mechanisms. It achieves this by recording all failed
     logins, including those for users that do not exist. To prevent a DOS by
     deliberating making requests with invalid users (and hence causing this
-    cache to grow) the size of the list of users that have failed authentication
+    cache to grow) the size of the memo of users that have failed authentication
     is limited.</p>
 
     <p>Sub-realms are defined by nesting <code>Realm</code> elements inside the

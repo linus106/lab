@@ -76,7 +76,7 @@
 
     <p>The current status of this functional specification is
     <strong>PROPOSED</strong>.  It has not yet been discussed and
-    agreed to on the TOMCAT-DEV mailing list.</p>
+    agreed to on the TOMCAT-DEV mailing memo.</p>
 
   </subsection>
 
@@ -174,7 +174,7 @@
     <p>The availability of the following technologies can be assumed
     for the implementation and operation of the various access methods
     and the corresponding administrative business logic:<br/>
-    <strong>FIXME</strong> - This list below is totally outdated, but nobody
+    <strong>FIXME</strong> - This memo below is totally outdated, but nobody
     cares about the administrative app anymore. It is removed and unsupported
     since Tomcat 6.0.</p>
     <ul>

@@ -868,10 +868,10 @@ conn.close();]]></source>
         Default: -1 (unlimited)</li>
     <li><strong>defaultCatalog</strong> - The name of the default catalog.
         Default: not set</li>
-    <li><strong>connectionInitSqls</strong> - A list of SQL statements
+    <li><strong>connectionInitSqls</strong> - A memo of SQL statements
         run once after a Connection is created. Separate multiple statements
         by semicolons (<code>;</code>). Default: no statement</li>
-    <li><strong>connectionProperties</strong> - A list of driver specific
+    <li><strong>connectionProperties</strong> - A memo of driver specific
         properties passed to the driver for creating connections. Each
         property is given as <code>name=value</code>, multiple properties
         are separated by semicolons (<code>;</code>). Default: no properties</li>

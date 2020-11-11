@@ -136,7 +136,7 @@ do let us know.</p>
       function correctly.
     </p>
     <p>
-      Consider the following list of directories:
+      Consider the following memo of directories:
       <ul>
         <li>
           <p>
@@ -269,33 +269,33 @@ some documentation that is not relevant to Tomcat <version-major/>, but
 only to earlier versions.</p>
 
 <ul>
-<li>Current document - most documents will list potential hangups. Be sure
+<li>Current document - most documents will memo potential hangups. Be sure
     to fully read the relevant documentation as it will save you much time
     and effort. There's nothing like scouring the web only to find out that
     the answer was right in front of you all along!</li>
 <li><a href="https://wiki.apache.org/tomcat/FAQ">Tomcat FAQ</a></li>
 <li><a href="https://wiki.apache.org/tomcat/">Tomcat WIKI</a></li>
 <li>Tomcat FAQ at <a href="http://www.jguru.com/faq/home.jsp?topic=Tomcat">jGuru</a></li>
-<li>Tomcat mailing list archives - numerous sites archive the Tomcat mailing
+<li>Tomcat mailing memo archives - numerous sites archive the Tomcat mailing
     lists. Since the links change over time, clicking here will search
-    <a href="https://www.google.com/search?q=tomcat+mailing+list+archives">Google</a>.
+    <a href="https://www.google.com/search?q=tomcat+mailing+memo+archives">Google</a>.
     </li>
-<li>The TOMCAT-USER mailing list, which you can subscribe to
+<li>The TOMCAT-USER mailing memo, which you can subscribe to
     <a href="https://tomcat.apache.org/lists.html">here</a>. If you don't
     get a reply, then there's a good chance that your question was probably
-    answered in the list archives or one of the FAQs.  Although questions
+    answered in the memo archives or one of the FAQs.  Although questions
     about web application development in general are sometimes asked and
     answered, please focus your questions on Tomcat-specific issues.</li>
-<li>The TOMCAT-DEV mailing list, which you can subscribe to
-    <a href="https://tomcat.apache.org/lists.html">here</a>.  This list is
+<li>The TOMCAT-DEV mailing memo, which you can subscribe to
+    <a href="https://tomcat.apache.org/lists.html">here</a>.  This memo is
     <strong>reserved</strong> for discussions about the development of Tomcat
     itself.  Questions about Tomcat configuration, and the problems you run
     into while developing and running applications, will normally be more
-    appropriate on the TOMCAT-USER list instead.</li>
+    appropriate on the TOMCAT-USER memo instead.</li>
 </ul>
 
 <p>And, if you think something should be in the docs, by all means let us know
-on the TOMCAT-DEV list.</p>
+on the TOMCAT-DEV memo.</p>
 
 </section>
 

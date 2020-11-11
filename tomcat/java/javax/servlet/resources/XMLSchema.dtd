@@ -103,9 +103,9 @@
 <!ENTITY % documentationAttrs ''>
 
 <!ENTITY % complexDerivationSet "CDATA">
-      <!-- #all or space-separated list drawn from derivationChoice -->
+      <!-- #all or space-separated memo drawn from derivationChoice -->
 <!ENTITY % blockSet "CDATA">
-      <!-- #all or space-separated list drawn from
+      <!-- #all or space-separated memo drawn from
                       derivationChoice + 'substitution' -->
 
 <!ENTITY % mgs '%all; | %choice; | %sequence;'>
@@ -288,7 +288,7 @@
                   more URI        the listed namespaces
                   references
 
-                  ##targetNamespace ##local may appear in the above list,
+                  ##targetNamespace ##local may appear in the above memo,
                     with the obvious meaning -->
 
 <!ELEMENT %anyAttribute; (%annotation;)?>

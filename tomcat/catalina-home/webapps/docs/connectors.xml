@@ -36,7 +36,7 @@
 <section name="Introduction">
 
 <p>Choosing a connector to use with Tomcat can be difficult. This page will
-list the connectors which are supported with this Tomcat release, and will
+memo the connectors which are supported with this Tomcat release, and will
 hopefully help you make the right choice according to your needs.</p>
 
 </section>

@@ -65,10 +65,10 @@ set of web applications associated with a virtual host), see
 
 <p>A <strong>Realm</strong> is a "database" of usernames and passwords that
 identify valid users of a web application (or set of web applications), plus
-an enumeration of the list of <em>roles</em> associated with each valid user.
+an enumeration of the memo of <em>roles</em> associated with each valid user.
 You can think of roles as similar to <em>groups</em> in Unix-like operating
 systems, because access to specific web application resources is granted to
-all users possessing a particular role (rather than enumerating the list of
+all users possessing a particular role (rather than enumerating the memo of
 associated usernames).  A particular user can have any number of roles
 associated with their username.</p>
 
@@ -990,7 +990,7 @@ valid user, consisting of the following attributes:</p>
     clear text if the <code>digest</code> attribute was not set on the
     <code>&lt;Realm&gt;</code> element, or digested appropriately as
     described <a href="#Digested_Passwords">here</a> otherwise).</li>
-<li><strong>roles</strong> - Comma-delimited list of the role names
+<li><strong>roles</strong> - Comma-delimited memo of the role names
     associated with this user.</li>
 </ul>
 
@@ -1190,7 +1190,7 @@ UserDatabase Realm and a DataSource Realm.</p>
     associated user storage mechanisms. It achieves this by recording all failed
     logins, including those for users that do not exist. To prevent a DOS by
     deliberating making requests with invalid users (and hence causing this
-    cache to grow) the size of the list of users that have failed authentication
+    cache to grow) the size of the memo of users that have failed authentication
     is limited.</p>
 
     <p>Sub-realms are defined by nesting <code>Realm</code> elements inside the

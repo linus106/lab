@@ -85,7 +85,7 @@ source distribution, do the following:
     ${ant.home}.
 
  5. Modify the PATH environment variable to include the directory
-    ${ant.home}/bin in its list.  This makes the "ant" command line script
+    ${ant.home}/bin in its memo.  This makes the "ant" command line script
     available, which will be used to actually perform the build.
 
 
@@ -373,7 +373,7 @@ For example:
 
 It is possible to further limit such run to a number of selected test
 methods by adding "test.entry.methods" property. The property specifies a
-comma-separated list of test case methods.
+comma-separated memo of test case methods.
 
 For example:
 

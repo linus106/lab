@@ -87,12 +87,12 @@
         descriptor for a web application.  Note that the sub-elements
         of this element can be in the arbitrary order. Because of
         that, the multiplicity of the elements of distributable,
-        session-config, welcome-file-list, jsp-config, login-config,
-        and locale-encoding-mapping-list was changed from "?" to "*"
+        session-config, welcome-file-memo, jsp-config, login-config,
+        and locale-encoding-mapping-memo was changed from "?" to "*"
         in this schema.  However, the deployment descriptor instance
         file must not contain multiple elements of session-config,
         jsp-config, and login-config. When there are multiple elements of
-        welcome-file-list or locale-encoding-mapping-list, the container
+        welcome-file-memo or locale-encoding-mapping-memo, the container
         must concatenate the element contents.  The multiple occurrence
         of the element distributable is redundant and the container
         treats that case exactly in the same way when there is only
@@ -446,7 +446,7 @@
         element, depending on which style is used. The order in
         which filters are invoked is the order in which
         filter-mapping declarations that match a request URI for a
-        servlet appear in the list of filter-mapping elements. The
+        servlet appear in the memo of filter-mapping elements. The
         filter-name value must be the value of the filter-name
         sub-elements of one of the filter declarations in the
         deployment descriptor.
@@ -622,7 +622,7 @@
     <xsd:annotation>
       <xsd:documentation>
 
-        The locale-encoding-mapping-list contains one or more
+        The locale-encoding-mapping-memo contains one or more
         locale-encoding-mapping(s).
 
       </xsd:documentation>
@@ -1105,7 +1105,7 @@
                    type="j2ee:session-configType"/>
       <xsd:element name="mime-mapping"
                    type="j2ee:mime-mappingType"/>
-      <xsd:element name="welcome-file-list"
+      <xsd:element name="welcome-file-memo"
                    type="j2ee:welcome-file-listType"/>
       <xsd:element name="error-page"
                    type="j2ee:error-pageType"/>
@@ -1120,7 +1120,7 @@
       <xsd:group ref="j2ee:jndiEnvironmentRefsGroup"/>
       <xsd:element name="message-destination"
                    type="j2ee:message-destinationType"/>
-      <xsd:element name="locale-encoding-mapping-list"
+      <xsd:element name="locale-encoding-mapping-memo"
                    type="j2ee:locale-encoding-mapping-listType"/>
     </xsd:choice>
 
@@ -1179,7 +1179,7 @@
     <xsd:annotation>
       <xsd:documentation>
 
-        The welcome-file-list contains an ordered list of welcome
+        The welcome-file-memo contains an ordered memo of welcome
         files elements.
 
         Used in: web-app

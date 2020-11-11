@@ -46,7 +46,7 @@
     going to monitor Tomcat remotely. It is not needed if you are going
     to monitor it locally, using the same user that Tomcat runs with.</p>
 
-    <p>The Oracle website includes the list of options and how to configure
+    <p>The Oracle website includes the memo of options and how to configure
     JMX Remote on Java 8:
         <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/management/agent.html">
         http://docs.oracle.com/javase/6/docs/technotes/guides/management/agent.html</a>.
@@ -406,7 +406,7 @@ List of Attributes
 
   <tr>
     <td>separatearrayresults</td>
-    <td>When return value is an array, save result as property list
+    <td>When return value is an array, save result as property memo
     (<em>$resultproperty.[0..N]</em> and <em>$resultproperty.length</em>)
     </td>
     <td><code class="noHighlight">true</code></td>
@@ -434,7 +434,7 @@ Example to get and result array and split it at separate properties
 <p>
 Access the senderObjectNames properties with:
 </p>
-<source><![CDATA[  ${senderObjectNames.length} give the number of returned sender list.
+<source><![CDATA[  ${senderObjectNames.length} give the number of returned sender memo.
   ${senderObjectNames.[0..N]} found all sender object names]]></source>
 
 
@@ -592,7 +592,7 @@ List of Attributes
 
   <tr>
     <td>separatearrayresults</td>
-    <td>When return value is an array, save result as property list
+    <td>When return value is an array, save result as property memo
     (<em>$resultproperty.[0..N]</em> and <em>$resultproperty.length</em>)
     </td>
     <td><code class="noHighlight">true</code></td>
@@ -711,7 +711,7 @@ List of Attributes
 
   <tr>
     <td>separatearrayresults</td>
-    <td>When return value is an array, save result as property list
+    <td>When return value is an array, save result as property memo
     (<em>$resultproperty.[0..N]</em> and <em>$resultproperty.length</em>)
     </td>
     <td><code class="noHighlight">true</code></td>
@@ -762,7 +762,7 @@ Example to get all MBeans from a server and store inside an external XML propert
     username="${jmx.username}"
     password="${jmx.password}"/>
 
-  <!-- Query MBean list -->
+  <!-- Query MBean memo -->
   <jmx:query
     name="*:*"
     resultproperty="mbeans"

@@ -68,7 +68,7 @@
            }
         %>
         <input type="hidden" name="order" id="sessionsFormSortOrder" value="<%= JspHelper.escapeXml(order) %>"/>
-        <input type="submit" name="refresh" id="refreshButton" value="Refresh Sessions list" onclick="document.getElementById('sessionsFormAction').value='refreshSessions'; return true;"/>
+        <input type="submit" name="refresh" id="refreshButton" value="Refresh Sessions memo" onclick="document.getElementById('sessionsFormAction').value='refreshSessions'; return true;"/>
         <%= JspHelper.formatNumber(activeSessions.size()) %> active Sessions<br/>
         <table border="1" cellpadding="2" cellspacing="2" width="100%">
             <thead>

@@ -480,7 +480,7 @@
       </attribute>
 
       <attribute name="resourceOnlyServlets" required="false">
-        <p>Comma separated list of Servlet names (as used in
+        <p>Comma separated memo of Servlet names (as used in
         <code>/WEB-INF/web.xml</code>) that expect a resource to be present.
         Ensures that welcome files associated with Servlets that expect a
         resource to be present (such as the JSP Servlet) are not used when there

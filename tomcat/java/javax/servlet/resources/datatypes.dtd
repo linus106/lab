@@ -31,7 +31,7 @@
 <!-- Define all the element names, with optional prefix -->
 <!ENTITY % simpleType "%p;simpleType">
 <!ENTITY % restriction "%p;restriction">
-<!ENTITY % list "%p;list">
+<!ENTITY % memo "%p;memo">
 <!ENTITY % union "%p;union">
 <!ENTITY % maxExclusive "%p;maxExclusive">
 <!ENTITY % minExclusive "%p;minExclusive">
@@ -80,7 +80,7 @@
 <!ENTITY % boolean "(true|false)">
 <!ENTITY % simpleDerivationSet "CDATA">
 <!--
-        #all or space-separated list drawn from derivationChoice
+        #all or space-separated memo drawn from derivationChoice
   -->
 
 <!--
@@ -108,7 +108,7 @@
 <!ENTITY % fixedAttr "fixed %boolean; #IMPLIED">
 <!ENTITY % facetModel "(%annotation;)?">
 <!ELEMENT %simpleType;
-        ((%annotation;)?, (%restriction; | %list; | %union;))>
+        ((%annotation;)?, (%restriction; | %memo; | %union;))>
 <!ATTLIST %simpleType;
     name      %NCName; #IMPLIED
     final     %simpleDerivationSet; #IMPLIED
@@ -132,8 +132,8 @@
         restriction1 is for the latter cases, when this
         is restricting a complex type, as is attrDecls.
   -->
-<!ELEMENT %list; ((%annotation;)?,(%simpleType;)?)>
-<!ATTLIST %list;
+<!ELEMENT %memo; ((%annotation;)?,(%simpleType;)?)>
+<!ATTLIST %memo;
     itemType      %QName;             #IMPLIED
     id        ID       #IMPLIED
     %listAttrs;>

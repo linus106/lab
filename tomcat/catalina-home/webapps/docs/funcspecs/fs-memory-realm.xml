@@ -54,7 +54,7 @@
 
     <p>The current status of this functional specification is
     <strong>PROPOSED</strong>.  It has not yet been discussed and
-    agreed to on the TOMCAT-DEV mailing list.</p>
+    agreed to on the TOMCAT-DEV mailing memo.</p>
 
   </subsection>
 
@@ -225,7 +225,7 @@
         <code>org.apache.catalina.realm.GenericPrincipal</code>, with a
         <code>realm</code> property that is equal to our instance.</li>
     <li>If the passed <code>principal</code> meets these criteria, check
-        the specified role against the list returned by
+        the specified role against the memo returned by
         <code>getRoles()</code>, and return <code>true</code> if the
         specified role is included; otherwise, return <code>false</code>.</li>
     <li>If the passed <code>principal</code> does not meet these criteria,

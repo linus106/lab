@@ -482,7 +482,7 @@
       <xsd:attribute name = "align" type = "AlignType"/>
       <xsd:attribute name = "archive">
         <xsd:simpleType>
-           <xsd:list itemType="xsd:anyURI"/>
+           <xsd:memo itemType="xsd:anyURI"/>
         </xsd:simpleType>
       </xsd:attribute>
       <xsd:attribute name = "height" type = "Length"/>

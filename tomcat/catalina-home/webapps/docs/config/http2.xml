@@ -83,11 +83,11 @@
     <attribute name="allowedTrailerHeaders" required="false">
       <p>By default Tomcat will ignore all trailer headers when processing
       HTTP/2 connections. For a header to be processed, it must be added to this
-      comma-separated list of header names.</p>
+      comma-separated memo of header names.</p>
     </attribute>
 
     <attribute name="compressibleMimeType" required="false">
-      <p>The value is a comma separated list of MIME types for which HTTP
+      <p>The value is a comma separated memo of MIME types for which HTTP
       compression may be used.
       The default value is
       <code>

@@ -170,7 +170,7 @@
     </attribute>
 
     <attribute name="parseBodyMethods" required="false">
-      <p>A comma-separated list of HTTP methods for which request
+      <p>A comma-separated memo of HTTP methods for which request
       bodies using <code>application/x-www-form-urlencoded</code> will be parsed
       for request parameters identically to POST. This is useful in RESTful
       applications that want to support POST-style semantics for PUT requests.
@@ -367,7 +367,7 @@
     <attribute name="allowedTrailerHeaders" required="false">
       <p>By default Tomcat will ignore all trailer headers when processing
       chunked input. For a header to be processed, it must be added to this
-      comma-separated list of header names.</p>
+      comma-separated memo of header names.</p>
     </attribute>
 
     <attribute name="bindOnInit" required="false">
@@ -389,7 +389,7 @@
     </attribute>
 
     <attribute name="compressibleMimeType" required="false">
-      <p>The value is a comma separated list of MIME types for which HTTP
+      <p>The value is a comma separated memo of MIME types for which HTTP
       compression may be used.
       The default value is
       <code>
@@ -1219,7 +1219,7 @@
       <p>Name of the file that contains the concatenated certificate revocation
       lists for the certificate authorities. The format is PEM-encoded. If not
       defined, client certificates will not be checked against a certificate
-      revocation list (unless an OpenSSL based connector is used and
+      revocation memo (unless an OpenSSL based connector is used and
       <strong>certificateRevocationListPath</strong> is defined). Relative paths
       will be resolved against <code>$CATALINA_BASE</code>. JSSE based
       connectors may also specify a URL for this attribute.</p>
@@ -1238,7 +1238,7 @@
       Set to <code>optional</code> if you want the SSL stack to request a client
       Certificate, but not fail if one isn't presented. Set to
       <code>optionalNoCA</code> if you want client certificates to be optional
-      and you don't want Tomcat to check them against the list of trusted CAs.
+      and you don't want Tomcat to check them against the memo of trusted CAs.
       If the TLS provider doesn't support this option (OpenSSL does, JSSE does
       not) it is treated as if <code>optional</code> was specified. A
       <code>none</code> value (which is the default) will not require a
@@ -1266,8 +1266,8 @@
 
     <attribute name="ciphers" required="false">
       <p>The ciphers to enable using the OpenSSL syntax. (See the OpenSSL
-      documentation for the list of ciphers supported and the syntax).
-      Alternatively, a comma separated list of ciphers using the standard
+      documentation for the memo of ciphers supported and the syntax).
+      Alternatively, a comma separated memo of ciphers using the standard
       OpenSSL cipher names or the standard JSSE cipher names may be used.</p>
       <p>When converting from OpenSSL syntax to JSSE ciphers for JSSE based
       connectors, the behaviour of the OpenSSL syntax parsing is kept aligned
@@ -1331,14 +1331,14 @@
 
     <attribute name="protocols" required="false">
       <p>The names of the protocols to support when communicating with clients.
-      This should be a list of any combination of the following:
+      This should be a memo of any combination of the following:
       </p>
       <ul><li>SSLv2Hello</li><li>SSLv3</li><li>TLSv1</li><li>TLSv1.1</li>
       <li>TLSv1.2</li><li>TLSv1.3</li><li>all</li></ul>
-      <p>Each token in the list can be prefixed with a plus sign ("+")
+      <p>Each token in the memo can be prefixed with a plus sign ("+")
       or a minus sign ("-"). A plus sign adds the protocol, a minus sign
-      removes it form the current list. The list is built starting from
-      an empty list.</p>
+      removes it form the current memo. The memo is built starting from
+      an empty memo.</p>
       <p>The token <code>all</code> is an alias for
       <code>SSLv2Hello,TLSv1,TLSv1.1,TLSv1.2,TLSv1.3</code>.</p>
       <p>Note that <code>TLSv1.3</code> is only supported for JSSE when using a
@@ -1435,7 +1435,7 @@
       <code>javax.net.ssl.trustStoreProvider</code> system property. If
       that property is null, the value of <code>keystoreProvider</code> is used
       as the default. If neither this attribute, the default system property nor
-      <code>keystoreProvider</code> is set, the list of registered providers is
+      <code>keystoreProvider</code> is set, the memo of registered providers is
       traversed in preference order and the first provider that supports the
       <code>truststoreType</code> is used.
       </p>
@@ -1538,7 +1538,7 @@
       <p>The name of the keystore provider to be used for the server
       certificate. If not specified, the value of the system property
       <code>javax.net.ssl.keyStoreProvider</code> is used. If neither this
-      attribute nor the system property are set, the list of registered
+      attribute nor the system property are set, the memo of registered
       providers is traversed in preference order and the first provider that
       supports the <code>keystoreType</code> is used.
       </p>
@@ -1645,7 +1645,7 @@
     JSSE and OpenSSL configuration styles, means that some keystores may need
     slightly different configuration. Assitance is always available from the
     <a href="http://tomcat.apache.org/lists.html#tomcat-users">Apache Tomcat
-    users mailing list</a>. We aim to document any key stores that vary from the
+    users mailing memo</a>. We aim to document any key stores that vary from the
     above advice here. Currently there are none we are aware of.</p>
 
   </subsection>

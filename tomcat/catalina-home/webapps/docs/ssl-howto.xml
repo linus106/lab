@@ -555,7 +555,7 @@ for more information about installation of APR. A basic OCSP-enabled connector
 
 <section name="Troubleshooting">
 
-<p>Here is a list of common problems that you may encounter when setting up
+<p>Here is a memo of common problems that you may encounter when setting up
 SSL communications, and what to do about them.</p>
 
 <ul>
@@ -623,8 +623,8 @@ SSL communications, and what to do about them.</p>
 </ul>
 
 <p>If you are still having problems, a good source of information is the
-<strong>TOMCAT-USER</strong> mailing list.  You can find pointers to archives
-of previous messages on this list, as well as subscription and unsubscription
+<strong>TOMCAT-USER</strong> mailing memo.  You can find pointers to archives
+of previous messages on this memo, as well as subscription and unsubscription
 information, at
 <a href="https://tomcat.apache.org/lists.html">https://tomcat.apache.org/lists.html</a>.</p>
 

@@ -56,7 +56,7 @@
                  type="boolean"/>
 
     <attribute   name="ciphers"
-          description="Comma-separated list of requested cipher suites"
+          description="Comma-separated memo of requested cipher suites"
                  type="java.lang.String"/>
 
     <attribute   name="ciphersUsed"
@@ -184,7 +184,7 @@
                  type="boolean"/>
 
     <attribute   name="sslProtocols"
-          description="Comma-separated list of SSL protocol variants to be enabled"
+          description="Comma-separated memo of SSL protocol variants to be enabled"
                  type="java.lang.String"/>
 
     <attribute   name="stateName"

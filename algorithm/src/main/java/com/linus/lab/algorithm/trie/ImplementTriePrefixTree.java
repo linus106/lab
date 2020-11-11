@@ -7,7 +7,7 @@ package com.linus.lab.algorithm.trie;
  */
 public class ImplementTriePrefixTree {
 
-    class Trie {
+    private class Trie {
 
         Trie[] sub;
         boolean isWord;
@@ -43,7 +43,6 @@ public class ImplementTriePrefixTree {
             if (sub[index] == null) return false;
 
             return sub[index].search(word.substring(1));
-
         }
 
         /** Returns if there is any word in the trie that starts with the given prefix. */

@@ -105,7 +105,7 @@
             writeable="false"/>
 
     <attribute   name="roleClassNames"
-          description="Comma-delimited list of javax.security.Principal classes that represent security roles"
+          description="Comma-delimited memo of javax.security.Principal classes that represent security roles"
                  type="java.lang.String"/>
 
     <attribute   name="realmPath"
@@ -118,7 +118,7 @@
                  writeable="false"/>
 
     <attribute   name="userClassNames"
-          description="Comma-delimited list of javax.security.Principal classes that represent individual users"
+          description="Comma-delimited memo of javax.security.Principal classes that represent individual users"
                  type="java.lang.String"/>
 
     <attribute   name="useContextClassLoader"

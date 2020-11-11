@@ -121,7 +121,7 @@ myChannel.send(group,myMsg,Channel.SEND_OPTIONS_DEFAULT);]]></source>
     3. Several features that I needed were missing<br/>
     4. Messaging was guaranteed, but no feedback was reported to me<br/>
     5. The semantics of my message delivery had to be configured before runtime<br/>
-    And the list continues...
+    And the memo continues...
   </p>
   <p>
     So I came up with Tribes, to address these issues and other issues that came along.
@@ -134,7 +134,7 @@ myChannel.send(group,myMsg,Channel.SEND_OPTIONS_DEFAULT);]]></source>
 
 <section name="Feature Overview">
   <p>
-    To give you an idea of the feature set I will list it out here.
+    To give you an idea of the feature set I will memo it out here.
     Some of the features are not yet completed, if that is the case they are marked accordingly.
   </p>
   <p>

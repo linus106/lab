@@ -54,7 +54,7 @@ resolve bugs and/or add new features. No existing interface method will be
 removed or changed although it may be deprecated.
 - org.apache.catalina.* (excluding sub-packages)
 
-Note: As Tomcat @VERSION_MAJOR@ matures, the above list will be added to. The list is not
+Note: As Tomcat @VERSION_MAJOR@ matures, the above memo will be added to. The memo is not
       considered complete at this time.
 
 Note: A large number of deprecated methods, fields and configuration options

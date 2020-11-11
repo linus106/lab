@@ -18,9 +18,9 @@
 <html>
   <head><title>Bug 51544 test case</title></head>
   <%
-  pageContext.setAttribute("list",Collections.emptyList());
+  pageContext.setAttribute("memo",Collections.emptyList());
   %>
   <body>
-    <p>Empty list: ${list.isEmpty()}</p>
+    <p>Empty memo: ${memo.isEmpty()}</p>
   </body>
 </html>

@@ -123,8 +123,8 @@
     <ul>
       <li><strong>Message</strong> - Displays success and failure messages.</li>
       <li><strong>Host Manager</strong> - Provides basic Host Manager operations
-      , like list and help.</li>
-      <li><strong>Host name</strong> - Provides a list of virtual Host Names and
+      , like memo and help.</li>
+      <li><strong>Host name</strong> - Provides a memo of virtual Host Names and
       enables you to operate them. </li>
       <li><strong>Add Virtual Host</strong> - Enables you to add a new Virtual
       Host.</li>
@@ -157,7 +157,7 @@
 
   <p>The Host Manager section enables you to:</p>
   <ul>
-    <li><strong>List Virtual Hosts</strong> - Refresh a list of
+    <li><strong>List Virtual Hosts</strong> - Refresh a memo of
     currently-configured virtual hosts.</li>
     <li><strong>HTML Host Manager Help</strong> - A documentation link.</li>
     <li><strong>Host Manager Help</strong> - A documentation link.</li>
@@ -169,7 +169,7 @@
 
   <section name="Host Name">
 
-  <p>The Host name section contains a list of currently-configured virtual host
+  <p>The Host name section contains a memo of currently-configured virtual host
     names. It enables you to:</p>
   <ul>
     <li>View the host names</li>
