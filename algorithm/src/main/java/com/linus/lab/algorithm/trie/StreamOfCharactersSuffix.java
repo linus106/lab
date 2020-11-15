@@ -1,38 +1,40 @@
 package com.linus.lab.algorithm.trie;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * @Author wangxiangyu
  * @Date 2020/11/13 17:02
  * @Description TODO
  */
-public class StreamOfCharacters {
+public class StreamOfCharactersSuffix {
 
     private Trie root = new Trie();
 
-    public StreamOfCharacters(String[] words) {
-        Arrays.stream(words).forEach(word->root.insert(word, 0));
+    public StreamOfCharactersSuffix(String[] words) {
+        Arrays.stream(words).forEach(word->root.insert(word, word.length() - 1));
     }
 
-    private Set<Trie> nodes = new HashSet<>();
+    private char[] charStream = new char[40000];
+
+    private int nextIndex = 0;
 
     public boolean query(char letter) {
-        nodes.add(root);
-        Set<Trie> newNodes = new HashSet<>();
-        boolean bingo = false;
-        for (Trie node : nodes) {
-            int index = letter - 'a';
-            if (node.sub[index] != null) {
-                newNodes.add(node.sub[index]);
-                if (node.sub[index].isWord) {
-                    bingo = true;
-                }
-            }
+        int i = nextIndex;
+        charStream[nextIndex++] = letter;
+        Trie node = root;
+
+        while (node != null && i >=0) {
+            int tIndex = charStream[i--] - 'a';
+            node = node.sub[tIndex];
+            if (node != null && node.isWord) return true;
         }
-        nodes = newNodes;
-        return bingo;
+
+        return false;
     }
+
 
 
     private class Trie {
@@ -48,7 +50,7 @@ public class StreamOfCharacters {
 
         /** Inserts a word into the trie. */
         public void insert(String word, int i) {
-            if (i == word.length()) {
+            if (i == -1) {
                 isWord = true;
                 return;
             }
@@ -64,7 +66,7 @@ public class StreamOfCharacters {
 
     public static void main(String[] args) {
 
-        StreamOfCharacters o = new StreamOfCharacters(new String[]{"cd","f","kl"});
+        StreamOfCharactersSuffix o = new StreamOfCharactersSuffix(new String[]{"cd","f","kl"});
 
 
         char[] stream = new char[]{'a', 'b', 'c', 'd', 'e', 'f', 'h', 'i', 'g', 'k', 'l', 'm', 'n', 'o', 'p', 'q'};
