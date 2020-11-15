@@ -19,6 +19,7 @@
         <module>spring</module>
         <module>mybatis</module>
         <module>redis</module>
+        <module>canal</module>
     </modules>
 
     <properties>
