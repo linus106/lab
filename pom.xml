@@ -20,6 +20,7 @@
         <module>mybatis</module>
         <module>redis</module>
         <module>canal</module>
+        <module>zk</module>
     </modules>
 
     <properties>
