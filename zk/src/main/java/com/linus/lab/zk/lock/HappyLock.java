@@ -1,5 +1,6 @@
-package com.linus.lab.zk.config;
+package com.linus.lab.zk.lock;
 
+import com.linus.lab.zk.config.ZookeeperFactory;
 import org.apache.zookeeper.KeeperException;
 import org.apache.zookeeper.ZooKeeper;
 import org.apache.zookeeper.data.Stat;
