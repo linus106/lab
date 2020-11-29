@@ -7,12 +7,12 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/springmvc/pom.xml" />
         <option value="$PROJECT_DIR$/servlet/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/canal/pom.xml" />
         <option value="$PROJECT_DIR$/socket-io/pom.xml" />
         <option value="$PROJECT_DIR$/tomcat/pom.xml" />
       </set>

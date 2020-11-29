@@ -21,6 +21,7 @@
         <module>redis</module>
         <module>canal</module>
         <module>zk</module>
+        <module>rabbitmq</module>
     </modules>
 
     <properties>
