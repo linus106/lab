@@ -1,4 +1,4 @@
-package com.linus.lab.algorithm.binarytree;
+package com.linus.lab.algorithm.binary;
 
 /**
  * 二叉搜索树：在二叉树的基础上，加入顺序性

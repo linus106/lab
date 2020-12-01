@@ -1,6 +1,4 @@
-package com.linus.lab.algorithm.binarytree;
-
-import com.sun.org.apache.bcel.internal.generic.RETURN;
+package com.linus.lab.algorithm.binary;
 
 /**
  * @Author wangxiangyu

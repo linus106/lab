@@ -1,4 +1,4 @@
-package com.linus.lab.algorithm.binarytree;
+package com.linus.lab.algorithm.binary;
 
 import java.util.ArrayList;
 import java.util.List;
