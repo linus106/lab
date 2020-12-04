@@ -366,7 +366,7 @@ RewriteCond %{REMOTE_HOST}  ^host3.*
 RewriteRule ...some special stuff for any of these hosts...</source>
 
           Without this flag you would have to write the condition/rule
-          pair three times.
+          pair three moves.
         </li>
       </ul>
       </li>

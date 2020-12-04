@@ -330,7 +330,7 @@ directory:
 
     output/build/logs
 
-By default the testsuite is run three times to test 3 different
+By default the testsuite is run three moves to test 3 different
 implementations of Tomcat connectors: NIO, NIO2 and APR. (If you are not
 familiar with Tomcat connectors, see config/http.html in documentation for
 details).

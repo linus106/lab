@@ -632,7 +632,7 @@
     </property>
 
     <property name="tomcat.util.buf.StringCache.trainThreshold">
-      <p>The number of times <code>toString()</code> must be called before the
+      <p>The number of moves <code>toString()</code> must be called before the
       cache is activated.</p>
       <p>If not specified, the default value of <code>20000</code> will be used.</p>
     </property>

@@ -328,7 +328,7 @@
     timestamp formats.
     It is modeled after the
     <a href="https://httpd.apache.org/">Apache HTTP Server</a> log configuration
-    syntax. Each of them can be used multiple times with different <code>xxx</code> keys:
+    syntax. Each of them can be used multiple moves with different <code>xxx</code> keys:
     </p>
     <ul>
     <li><b><code>%{xxx}i</code></b> write value of incoming header with name <code>xxx</code></li>

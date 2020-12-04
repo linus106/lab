@@ -248,7 +248,7 @@
     </attribute>
 
     <attribute name="maxIdle" required="false">
-      <p>(int) The maximum number of connections that should be kept in the pool at all times.
+      <p>(int) The maximum number of connections that should be kept in the pool at all moves.
          Default value is  <code>maxActive</code>:<code>100</code>
          Idle connections are checked periodically (if enabled) and
          connections that been idle for longer than <code>minEvictableIdleTimeMillis</code>
@@ -257,7 +257,7 @@
 
     <attribute name="minIdle" required="false">
       <p>
-        (int) The minimum number of established connections that should be kept in the pool at all times.
+        (int) The minimum number of established connections that should be kept in the pool at all moves.
         The connection pool can shrink below this number if validation queries fail.
         Default value is derived from <code>initialSize</code>:<code>10</code> (also see <code>testWhileIdle</code>)
       </p>

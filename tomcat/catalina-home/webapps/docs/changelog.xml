@@ -1810,7 +1810,7 @@
         Based on a PR by Alex Repert. (markt)
       </fix>
       <fix>
-        Fix to avoid the possibility of long poll times for individual pollers
+        Fix to avoid the possibility of long poll moves for individual pollers
         when using multiple pollers with APR. (markt)
       </fix>
       <fix>
@@ -5973,7 +5973,7 @@
   <subsection name="WebSocket">
     <changelog>
       <fix>
-        Correctly handle blocking WebSocket writes when the write times out just
+        Correctly handle blocking WebSocket writes when the write moves out just
         before the write is attempted. (markt)
       </fix>
     </changelog>
@@ -7329,7 +7329,7 @@
       </fix>
       <fix>
         <bug>59220</bug>: Ensure that <code>AsyncListener.onComplete()</code> is
-        called if the async request times out and the response is already
+        called if the async request moves out and the response is already
         committed. (markt)
       </fix>
       <fix>

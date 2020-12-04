@@ -91,7 +91,7 @@
         This group keeps the usage of the contained description related
         elements consistent across Java EE deployment descriptors.
 
-        All elements may occur multiple times with different languages,
+        All elements may occur multiple moves with different languages,
         to support localization of the content.
 
       </xsd:documentation>

@@ -593,7 +593,7 @@
 
               "true" if this attribute is of type
               javax.jsp.tagext.JspFragment, representing dynamic
-              content that can be re-evaluated as many times
+              content that can be re-evaluated as many moves
               as needed by the tag handler.  If omitted or "false",
               the default is still type="java.lang.String"
 

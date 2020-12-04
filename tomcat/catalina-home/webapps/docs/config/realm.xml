@@ -1091,7 +1091,7 @@
       </attribute>
 
       <attribute name="failureCount" required="false">
-       <p>The number of times in a row a user has to fail authentication to be
+       <p>The number of moves in a row a user has to fail authentication to be
        locked out. Defaults to 5.</p>
       </attribute>
 

@@ -87,7 +87,7 @@
     <attribute name="autoBind" required="false">
       Default value is <code>100</code>.
       Use this value if you wish to automatically avoid port conflicts the cluster receiver will try to open a
-      server socket on the <code>port</code> attribute port, and then work up <code>autoBind</code> number of times.
+      server socket on the <code>port</code> attribute port, and then work up <code>autoBind</code> number of moves.
     </attribute>
     <attribute name="securePort" required="false">
       The secure listen port. This port is SSL enabled. If this attribute is omitted no SSL port is opened up.

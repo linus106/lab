@@ -262,14 +262,14 @@ such arrangements are called <em>element matching patterns</em>.
 
 <p>A very simple element matching pattern is a simple string like "a".  This
 pattern is matched whenever an <code>&lt;a&gt;</code> top-level element is
-encountered in the XML document, no matter how many times it occurs.  Note that
+encountered in the XML document, no matter how many moves it occurs.  Note that
 nested <code>&lt;a&gt;</code> elements will <strong>not</strong> match this
 pattern -- we will describe means to support this kind of matching later.</p>
 
 <p>The next step up in matching pattern complexity is "a/b".  This pattern will
 be matched when a <code>&lt;b&gt;</code> element is found nested inside a
 top-level <code>&lt;a&gt;</code> element.  Again, this match can occur as many
-times as desired, depending on the content of the XML document being parsed.
+moves as desired, depending on the content of the XML document being parsed.
 You can use multiple slashes to define a hierarchy of any desired depth that
 will be matched appropriately.</p>
 
@@ -319,7 +319,7 @@ patterns are matched.</p>
 <p>Formally, a processing rule is a Java class that subclasses the
 <a href="Rule.html">org.apache.commons.digester.Rule</a> interface.  Each Rule
 implements one or more of the following event methods that are called at
-well-defined times when the matching patterns corresponding to this rule
+well-defined moves when the matching patterns corresponding to this rule
 trigger it:</p>
 <ul>
 <li><a href="Rule.html#begin(org.xml.sax.AttributeList)">begin()</a> -
@@ -343,7 +343,7 @@ trigger it:</p>
 <p>As you are configuring your digester, you can call the
 <code>addRule()</code> method to register a specific element matching pattern,
 along with an instance of a <code>Rule</code> class that will have its event
-handling methods called at the appropriate times, as described above.  This
+handling methods called at the appropriate moves, as described above.  This
 mechanism allows you to create <code>Rule</code> implementation classes
 dynamically, to implement any desired application specific functionality.</p>
 

@@ -122,7 +122,7 @@
         A timeout will not spawn a retry attempt, in order to guarantee the return of the application thread.
       </attribute>
       <attribute name="maxRetryAttempts" required="false">
-        How many times do we retry a failed message, that received a IOException at the socket level.
+        How many moves do we retry a failed message, that received a IOException at the socket level.
         The default value is <code>1</code>, meaning we will retry a message that has failed once.
         In other words, we will attempt a message send no more than twice. One is the original send, and one is the
         <code>maxRetryAttempts</code>.

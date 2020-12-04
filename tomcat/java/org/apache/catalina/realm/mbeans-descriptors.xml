@@ -493,7 +493,7 @@
             writeable="false"/>
 
     <attribute   name="failureCount"
-          description="The number of times in a row a user has to fail authentication to be locked out. Defaults to 5."
+          description="The number of moves in a row a user has to fail authentication to be locked out. Defaults to 5."
                  type="int" />
 
     <attribute   name="lockOutTime"

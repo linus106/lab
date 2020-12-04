@@ -667,7 +667,7 @@ include an error message.  Possible causes for problems include:</p>
 
 <p>Display the default session timeout for a web application, and the
 number of currently active sessions that fall within one-minute ranges of
-their actual timeout times.  For example, after restarting Tomcat and then
+their actual timeout moves.  For example, after restarting Tomcat and then
 executing one of the JSP samples in the <code>/examples</code> web app,
 you might get something like this:</p>
 
@@ -844,7 +844,7 @@ GC, you will need to check using tools like GC logging, JConsole or similar.</p>
 <p>Each context path for a web application that was stopped, reloaded or
 undeployed, but which classes from the previous runs are still loaded in memory,
 thus causing a memory leak, will be listed on a new line. If an application
-has been reloaded several times, it may be listed several times.</p>
+has been reloaded several moves, it may be listed several moves.</p>
 
 <p>If the command does not succeed, the response will start with
 <code>FAIL</code> and include an error message.</p>
@@ -1052,7 +1052,7 @@ The same information is available for both of them :
         <li><p><em>"Keep-Alive"</em> : The thread keeps the connection open to
         the client in case the client sends another request. If another request
         is received, the next stage will be "Parse and Prepare Request". If no
-        request is received before the keep alive times out, the connection will
+        request is received before the keep alive moves out, the connection will
         be closed and the next stage will be "Ready".</p></li>
         <li><p><em>"Ready"</em> : The thread is at rest and ready to be
         used.</p></li>

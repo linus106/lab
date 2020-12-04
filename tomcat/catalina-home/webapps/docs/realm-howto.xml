@@ -395,7 +395,7 @@ described above, and accessed with username "dbuser" and password "dbpass":</p>
     reflected.</li>
 <li>Once a user has been authenticated, the user (and his or her associated
     roles) are cached within Tomcat for the duration of the user's login.
-    (For FORM-based authentication, that means until the session times out or
+    (For FORM-based authentication, that means until the session moves out or
     is invalidated; for BASIC authentication, that means until the user
     closes their browser).  The cached user is <strong>not</strong> saved and
     restored across sessions serialisations. Any changes to the database
@@ -505,7 +505,7 @@ name "java:/comp/env/jdbc/authority".</p>
     reflected.</li>
 <li>Once a user has been authenticated, the user (and his or her associated
     roles) are cached within Tomcat for the duration of the user's login.
-    (For FORM-based authentication, that means until the session times out or
+    (For FORM-based authentication, that means until the session moves out or
     is invalidated; for BASIC authentication, that means until the user
     closes their browser).  The cached user is <strong>not</strong> saved and
     restored across sessions serialisations. Any changes to the database
@@ -882,7 +882,7 @@ authentication is usually to be preferred.</p>
     reflected.</li>
 <li>Once a user has been authenticated, the user (and his or her associated
     roles) are cached within Tomcat for the duration of the user's login.
-    (For FORM-based authentication, that means until the session times out or
+    (For FORM-based authentication, that means until the session moves out or
     is invalidated; for BASIC authentication, that means until the user
     closes their browser).  The cached user is <strong>not</strong> saved and
     restored across sessions serialisations. Any changes to the directory
@@ -949,7 +949,7 @@ to all virtual hosts and web applications.  The default contents of the
     <code>Realm</code>.</li>
 <li>Once a user has been authenticated, the user (and his or her associated
     roles) are cached within Tomcat for the duration of the user's login.
-    (For FORM-based authentication, that means until the session times out or
+    (For FORM-based authentication, that means until the session moves out or
     is invalidated; for BASIC authentication, that means until the user
     closes their browser).  The cached user is <strong>not</strong> saved and
     restored across sessions serialisations.</li>
@@ -1007,7 +1007,7 @@ valid user, consisting of the following attributes:</p>
     <code>Realm</code>.</li>
 <li>Once a user has been authenticated, the user (and his or her associated
     roles) are cached within Tomcat for the duration of the user's login.
-    (For FORM-based authentication, that means until the session times out or
+    (For FORM-based authentication, that means until the session moves out or
     is invalidated; for BASIC authentication, that means until the user
     closes their browser).  The cached user is <strong>not</strong> saved and
     restored across sessions serialisations.</li>
@@ -1119,7 +1119,7 @@ and restarting the server, without any code changes to your application.</li>
           <li>Once a user has been authenticated, the user (and his or
               her associated roles) are cached within Tomcat for the duration of
               the user's login.  For FORM-based authentication, that means until
-              the session times out or is invalidated; for BASIC authentication,
+              the session moves out or is invalidated; for BASIC authentication,
               that means until the user closes their browser.  Any changes to the
               security information for an already authenticated user will <strong>not</strong>
               be reflected until the next time that user logs on again.</li>

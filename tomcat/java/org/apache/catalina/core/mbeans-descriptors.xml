@@ -226,7 +226,7 @@
                type="boolean"/>
 
     <attribute name="processingTime"
-               description="Cumulative execution times of all servlets in this context"
+               description="Cumulative execution moves of all servlets in this context"
                type="long"
                writeable="false" />
 

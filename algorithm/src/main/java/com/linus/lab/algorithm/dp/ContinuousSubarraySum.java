@@ -8,16 +8,16 @@ package com.linus.lab.algorithm.dp;
 public class ContinuousSubarraySum {
 
     public boolean checkSubarraySum(int[] nums, int k) {
-        int[][] dp = new int[nums.length][nums.length];//记录范围和
+        int[] dp = new int[nums.length];//记录范围和
         int length = 1;
         while (length <= nums.length) {
             for (int i = 0; i + length - 1 < nums.length; i++) {
                 int end = i +length - 1;
                 if (length == 1) {
-                    dp[i][end] = nums[i];
+                    dp[i] = nums[i];
                 } else {
-                    dp[i][end] = dp[i][end - 1] + nums[end];
-                    if (isNTimes(dp[i][end], k)) return true;
+                    dp[i] = dp[i] + nums[end];
+                    if (isNTimes(dp[i], k)) return true;
                 }
             }
             length++;
@@ -34,7 +34,7 @@ public class ContinuousSubarraySum {
     public static void main(String[] args) {
 
         ContinuousSubarraySum o = new ContinuousSubarraySum();
-        boolean res = o.checkSubarraySum(new int[]{23, 2, 4, 6, 7}, 6);
+        boolean res = o.checkSubarraySum(new int[]{0,1,0}, 0);
         System.out.println(res);
 
     }

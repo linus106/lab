@@ -220,7 +220,7 @@ should be completed:</p>
     8, which is asynchronous. You can read more on the <a href="tribes/introduction.html">send flag(overview)</a> or the
     <doc path="/api/org/apache/catalina/tribes/Channel.html">send flag(javadoc)</doc>.
     During async replication, the request is returned before the data has been replicated. async replication yields shorter
-    request times, and synchronous replication guarantees the session to be replicated before the request returns.
+    request moves, and synchronous replication guarantees the session to be replicated before the request returns.
 </p>
 </section>
 
@@ -535,7 +535,7 @@ should be completed:</p>
         back through the valve pipeline.  For each request the entire session is replicated,
         this allows code that modifies attributes in the session without calling setAttribute
         or removeAttribute to be replicated.  A useDirtyFlag configuration parameter can
-        be used to optimize the number of times a session is replicated.
+        be used to optimize the number of moves a session is replicated.
     </p>
 
 </li>
