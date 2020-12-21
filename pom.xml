@@ -22,6 +22,7 @@
         <module>canal</module>
         <module>zk</module>
         <module>rabbitmq</module>
+        <module>rocketmq</module>
     </modules>
 
     <properties>
