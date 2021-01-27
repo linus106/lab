@@ -21,7 +21,7 @@ public class BioServer {
             server = new ServerSocket(PORT);
             System.out.println("bio server started");
             while (true) {
-                Socket socket = server.accept();
+                Socket socket = server.accept();//阻塞1
                 new SocketHandler(socket).run();
             }
         } finally {
@@ -45,7 +45,7 @@ class SocketHandler implements Runnable {
     public void run() {
         try {
             byte[] buffer = new byte[1024];
-            socket.getInputStream().read(buffer);
+            socket.getInputStream().read(buffer);//阻塞2
             System.out.println(new String (buffer));
             socket.getOutputStream().write("hello client".getBytes());
         } catch (IOException e) {

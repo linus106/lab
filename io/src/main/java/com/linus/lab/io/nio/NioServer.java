@@ -35,15 +35,15 @@ public class NioServer {
 
 
         while (true) {
-            selector.select(1000);//最多等待1S，如果没到1S，就有事件了也立即返回。
-            Set<SelectionKey> keys = selector.selectedKeys();
+            selector.select(1000);//阻塞直到有accept事件发生
+            Set<SelectionKey> keys = selector.selectedKeys();//过滤出有事件的channel
             Iterator<SelectionKey> it = keys.iterator();
             while (it.hasNext()) {
                 SelectionKey selectionKey = it.next();
                 it.remove();
                 handle(selectionKey);
             }
-            selector1.select(1000);//最多等待1S，如果没到1S，就有事件了也立即返回。
+            selector1.select(1000);//阻塞直到有read事件发生
             Set<SelectionKey> keys1 = selector1.selectedKeys();
             Iterator<SelectionKey> it1 = keys1.iterator();
             while(it1.hasNext()){
