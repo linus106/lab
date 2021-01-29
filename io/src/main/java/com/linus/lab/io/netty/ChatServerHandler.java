@@ -39,11 +39,12 @@ public class ChatServerHandler extends SimpleChannelInboundHandler<String> {
     @Override
     protected void channelRead0(ChannelHandlerContext channelHandlerContext, String o) throws Exception {
         final Channel sender = channelHandlerContext.channel();
+        System.out.println(String.format("[%s]说:[%s]", sender.remoteAddress(), o));
         for (Channel clint : onlineClints) {
             if (sender == clint) {
-                clint.writeAndFlush(String.format("[%s]说:[%s]", "我", o));
+                clint.writeAndFlush(String.format("[%s]说:[%s]", "我", o) + "_");
             } else {
-                clint.writeAndFlush(String.format("[%s]说:[%s]", sender.remoteAddress(), o));
+                clint.writeAndFlush(String.format("[%s]说:[%s]", sender.remoteAddress(), o) + "_");
             }
         }
     }

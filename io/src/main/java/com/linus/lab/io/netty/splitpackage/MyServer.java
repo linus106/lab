@@ -1,23 +1,16 @@
-package com.linus.lab.io.netty;
+package com.linus.lab.io.netty.splitpackage;
 
 import io.netty.bootstrap.ServerBootstrap;
-import io.netty.buffer.Unpooled;
-import io.netty.channel.ChannelFuture;
-import io.netty.channel.ChannelInitializer;
-import io.netty.channel.ChannelOption;
-import io.netty.channel.EventLoopGroup;
+import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
-import io.netty.handler.codec.DelimiterBasedFrameDecoder;
-import io.netty.handler.codec.string.StringDecoder;
-import io.netty.handler.codec.string.StringEncoder;
 
 /**
  * @author ：wangxiangyu
  * @date ：Created in 2021/1/20
  */
-public class ChatServer {
+public class MyServer {
 
 
     public static void main(String[] args) throws InterruptedException {
@@ -30,11 +23,14 @@ public class ChatServer {
                     .childHandler(new ChannelInitializer<SocketChannel>() { // (4)
                         @Override
                         public void initChannel(SocketChannel ch) throws Exception {
-                            ch.pipeline().addLast(new DelimiterBasedFrameDecoder(1024,
-                                    Unpooled.copiedBuffer("_".getBytes())));
-                            ch.pipeline().addLast(new StringDecoder());
-                            ch.pipeline().addLast(new StringEncoder());
-                            ch.pipeline().addLast(new ChatServerHandler());
+                            ch.pipeline().addLast(new MyMessageDecoder());
+                            ch.pipeline().addLast(new SimpleChannelInboundHandler() {
+                                @Override
+                                protected void channelRead0(ChannelHandlerContext ctx, Object msg) throws Exception {
+                                    MyProtocol myProtocol = (MyProtocol) msg;
+                                    System.out.println(myProtocol);
+                                }
+                            });
                         }
                     })
                     .option(ChannelOption.SO_BACKLOG, 128)          // (5)

@@ -1,7 +1,6 @@
-package com.linus.lab.io.netty;
+package com.linus.lab.io.netty.splitpackage;
 
 import io.netty.bootstrap.Bootstrap;
-import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelOption;
@@ -9,21 +8,17 @@ import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
-import io.netty.handler.codec.DelimiterBasedFrameDecoder;
-import io.netty.handler.codec.string.StringDecoder;
-import io.netty.handler.codec.string.StringEncoder;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
+import java.io.UnsupportedEncodingException;
 import java.util.Scanner;
 
 /**
  * @author ：wangxiangyu
  * @date ：Created in 2021/1/20
  */
-public class ChatClient {
+public class MyClient {
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException, UnsupportedEncodingException {
         EventLoopGroup workerGroup = new NioEventLoopGroup();
 
         try {
@@ -34,11 +29,8 @@ public class ChatClient {
             b.handler(new ChannelInitializer<SocketChannel>() {
                 @Override
                 public void initChannel(SocketChannel ch) throws Exception {
-                    ch.pipeline().addLast(new DelimiterBasedFrameDecoder(1024,
-                            Unpooled.copiedBuffer("_".getBytes())));
-                    ch.pipeline().addLast(new StringDecoder());
-                    ch.pipeline().addLast(new StringEncoder());
-                    ch.pipeline().addLast(new ChatClientHandler());
+                    ch.pipeline().addLast(new MyMessageEncoder());
+//                    ch.pipeline().addLast(new StringEncoder());
                 }
             });
 
@@ -46,11 +38,13 @@ public class ChatClient {
             ChannelFuture f = b.connect("127.0.0.1", 9000).sync(); // (5)
 
             Scanner scanner = new Scanner(System.in);
+
 //            while (scanner.hasNext()) {
 //                f.channel().writeAndFlush(scanner.next());
 //            }
-            for (int i = 0; i < 100; i++) {
-                f.channel().writeAndFlush("中文中文" + i + "_");
+            for (int i = 0; i < 200; i++) {
+                byte[] bytes = "来来来来，嘻嘻嘻喜爱，123123123".getBytes("UTF-8");
+                f.channel().writeAndFlush(new MyProtocol(bytes.length, bytes));
             }
 
             // Wait until the connection is closed.
